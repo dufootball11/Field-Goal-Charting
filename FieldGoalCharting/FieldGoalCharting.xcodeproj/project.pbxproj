@@ -7,96 +7,95 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		24382809147427CF00729A45 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24382808147427CF00729A45 /* UIKit.framework */; };
-		2438280B147427CF00729A45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2438280A147427CF00729A45 /* Foundation.framework */; };
-		2438280D147427CF00729A45 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2438280C147427CF00729A45 /* CoreGraphics.framework */; };
-		24382813147427CF00729A45 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24382811147427CF00729A45 /* InfoPlist.strings */; };
-		24382815147427CF00729A45 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24382814147427CF00729A45 /* main.m */; };
-		24382819147427CF00729A45 /* FieldGoalChartingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24382818147427CF00729A45 /* FieldGoalChartingAppDelegate.m */; };
-		2438281C147427CF00729A45 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2438281A147427CF00729A45 /* MainWindow.xib */; };
-		2438281F147427CF00729A45 /* FieldGoalChartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2438281E147427CF00729A45 /* FieldGoalChartingViewController.m */; };
-		24382822147427CF00729A45 /* FieldGoalChartingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24382820147427CF00729A45 /* FieldGoalChartingViewController.xib */; };
+		24A1717914742C4A005028F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A1717814742C4A005028F4 /* UIKit.framework */; };
+		24A1717B14742C4A005028F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A1717A14742C4A005028F4 /* Foundation.framework */; };
+		24A1717D14742C4A005028F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A1717C14742C4A005028F4 /* CoreGraphics.framework */; };
+		24A1717F14742C4A005028F4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A1717E14742C4A005028F4 /* CoreData.framework */; };
+		24A1718514742C4B005028F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 24A1718314742C4B005028F4 /* InfoPlist.strings */; };
+		24A1718714742C4B005028F4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A1718614742C4B005028F4 /* main.m */; };
+		24A1718B14742C4B005028F4 /* FieldGoalChartingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */; };
+		24A1718E14742C4B005028F4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A1718C14742C4B005028F4 /* MainWindow.xib */; };
+		24A1719114742C4B005028F4 /* FieldGoalCharting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24A1718F14742C4B005028F4 /* FieldGoalCharting.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24382804147427CF00729A45 /* FieldGoalCharting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldGoalCharting.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		24382808147427CF00729A45 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		2438280A147427CF00729A45 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		2438280C147427CF00729A45 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		24382810147427CF00729A45 /* FieldGoalCharting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FieldGoalCharting-Info.plist"; sourceTree = "<group>"; };
-		24382812147427CF00729A45 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		24382814147427CF00729A45 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		24382816147427CF00729A45 /* FieldGoalCharting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FieldGoalCharting-Prefix.pch"; sourceTree = "<group>"; };
-		24382817147427CF00729A45 /* FieldGoalChartingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieldGoalChartingAppDelegate.h; sourceTree = "<group>"; };
-		24382818147427CF00729A45 /* FieldGoalChartingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieldGoalChartingAppDelegate.m; sourceTree = "<group>"; };
-		2438281B147427CF00729A45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		2438281D147427CF00729A45 /* FieldGoalChartingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieldGoalChartingViewController.h; sourceTree = "<group>"; };
-		2438281E147427CF00729A45 /* FieldGoalChartingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieldGoalChartingViewController.m; sourceTree = "<group>"; };
-		24382821147427CF00729A45 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FieldGoalChartingViewController.xib; sourceTree = "<group>"; };
+		24A1717414742C4A005028F4 /* FieldGoalCharting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldGoalCharting.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		24A1717814742C4A005028F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		24A1717A14742C4A005028F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		24A1717C14742C4A005028F4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		24A1717E14742C4A005028F4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		24A1718214742C4A005028F4 /* FieldGoalCharting-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FieldGoalCharting-Info.plist"; sourceTree = "<group>"; };
+		24A1718414742C4B005028F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		24A1718614742C4B005028F4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24A1718814742C4B005028F4 /* FieldGoalCharting-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FieldGoalCharting-Prefix.pch"; sourceTree = "<group>"; };
+		24A1718914742C4B005028F4 /* FieldGoalChartingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FieldGoalChartingAppDelegate.h; sourceTree = "<group>"; };
+		24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieldGoalChartingAppDelegate.m; sourceTree = "<group>"; };
+		24A1718D14742C4B005028F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		24A1719014742C4B005028F4 /* FieldGoalCharting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FieldGoalCharting.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		24382801147427CF00729A45 /* Frameworks */ = {
+		24A1717114742C4A005028F4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24382809147427CF00729A45 /* UIKit.framework in Frameworks */,
-				2438280B147427CF00729A45 /* Foundation.framework in Frameworks */,
-				2438280D147427CF00729A45 /* CoreGraphics.framework in Frameworks */,
+				24A1717914742C4A005028F4 /* UIKit.framework in Frameworks */,
+				24A1717B14742C4A005028F4 /* Foundation.framework in Frameworks */,
+				24A1717D14742C4A005028F4 /* CoreGraphics.framework in Frameworks */,
+				24A1717F14742C4A005028F4 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		243827F9147427CF00729A45 = {
+		24A1716914742C49005028F4 = {
 			isa = PBXGroup;
 			children = (
-				2438280E147427CF00729A45 /* FieldGoalCharting */,
-				24382807147427CF00729A45 /* Frameworks */,
-				24382805147427CF00729A45 /* Products */,
+				24A1718014742C4A005028F4 /* FieldGoalCharting */,
+				24A1717714742C4A005028F4 /* Frameworks */,
+				24A1717514742C4A005028F4 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		24382805147427CF00729A45 /* Products */ = {
+		24A1717514742C4A005028F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				24382804147427CF00729A45 /* FieldGoalCharting.app */,
+				24A1717414742C4A005028F4 /* FieldGoalCharting.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		24382807147427CF00729A45 /* Frameworks */ = {
+		24A1717714742C4A005028F4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				24382808147427CF00729A45 /* UIKit.framework */,
-				2438280A147427CF00729A45 /* Foundation.framework */,
-				2438280C147427CF00729A45 /* CoreGraphics.framework */,
+				24A1717814742C4A005028F4 /* UIKit.framework */,
+				24A1717A14742C4A005028F4 /* Foundation.framework */,
+				24A1717C14742C4A005028F4 /* CoreGraphics.framework */,
+				24A1717E14742C4A005028F4 /* CoreData.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2438280E147427CF00729A45 /* FieldGoalCharting */ = {
+		24A1718014742C4A005028F4 /* FieldGoalCharting */ = {
 			isa = PBXGroup;
 			children = (
-				24382817147427CF00729A45 /* FieldGoalChartingAppDelegate.h */,
-				24382818147427CF00729A45 /* FieldGoalChartingAppDelegate.m */,
-				2438281A147427CF00729A45 /* MainWindow.xib */,
-				2438281D147427CF00729A45 /* FieldGoalChartingViewController.h */,
-				2438281E147427CF00729A45 /* FieldGoalChartingViewController.m */,
-				24382820147427CF00729A45 /* FieldGoalChartingViewController.xib */,
-				2438280F147427CF00729A45 /* Supporting Files */,
+				24A1718914742C4B005028F4 /* FieldGoalChartingAppDelegate.h */,
+				24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */,
+				24A1718C14742C4B005028F4 /* MainWindow.xib */,
+				24A1718F14742C4B005028F4 /* FieldGoalCharting.xcdatamodeld */,
+				24A1718114742C4A005028F4 /* Supporting Files */,
 			);
 			path = FieldGoalCharting;
 			sourceTree = "<group>";
 		};
-		2438280F147427CF00729A45 /* Supporting Files */ = {
+		24A1718114742C4A005028F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				24382810147427CF00729A45 /* FieldGoalCharting-Info.plist */,
-				24382811147427CF00729A45 /* InfoPlist.strings */,
-				24382814147427CF00729A45 /* main.m */,
-				24382816147427CF00729A45 /* FieldGoalCharting-Prefix.pch */,
+				24A1718214742C4A005028F4 /* FieldGoalCharting-Info.plist */,
+				24A1718314742C4B005028F4 /* InfoPlist.strings */,
+				24A1718614742C4B005028F4 /* main.m */,
+				24A1718814742C4B005028F4 /* FieldGoalCharting-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -104,13 +103,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		24382803147427CF00729A45 /* FieldGoalCharting */ = {
+		24A1717314742C4A005028F4 /* FieldGoalCharting */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 24382825147427CF00729A45 /* Build configuration list for PBXNativeTarget "FieldGoalCharting" */;
+			buildConfigurationList = 24A1719414742C4C005028F4 /* Build configuration list for PBXNativeTarget "FieldGoalCharting" */;
 			buildPhases = (
-				24382800147427CF00729A45 /* Sources */,
-				24382801147427CF00729A45 /* Frameworks */,
-				24382802147427CF00729A45 /* Resources */,
+				24A1717014742C4A005028F4 /* Sources */,
+				24A1717114742C4A005028F4 /* Frameworks */,
+				24A1717214742C4A005028F4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -118,86 +117,77 @@
 			);
 			name = FieldGoalCharting;
 			productName = FieldGoalCharting;
-			productReference = 24382804147427CF00729A45 /* FieldGoalCharting.app */;
+			productReference = 24A1717414742C4A005028F4 /* FieldGoalCharting.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		243827FB147427CF00729A45 /* Project object */ = {
+		24A1716B14742C49005028F4 /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 243827FE147427CF00729A45 /* Build configuration list for PBXProject "FieldGoalCharting" */;
+			buildConfigurationList = 24A1716E14742C49005028F4 /* Build configuration list for PBXProject "FieldGoalCharting" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 243827F9147427CF00729A45;
-			productRefGroup = 24382805147427CF00729A45 /* Products */;
+			mainGroup = 24A1716914742C49005028F4;
+			productRefGroup = 24A1717514742C4A005028F4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				24382803147427CF00729A45 /* FieldGoalCharting */,
+				24A1717314742C4A005028F4 /* FieldGoalCharting */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		24382802147427CF00729A45 /* Resources */ = {
+		24A1717214742C4A005028F4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24382813147427CF00729A45 /* InfoPlist.strings in Resources */,
-				2438281C147427CF00729A45 /* MainWindow.xib in Resources */,
-				24382822147427CF00729A45 /* FieldGoalChartingViewController.xib in Resources */,
+				24A1718514742C4B005028F4 /* InfoPlist.strings in Resources */,
+				24A1718E14742C4B005028F4 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		24382800147427CF00729A45 /* Sources */ = {
+		24A1717014742C4A005028F4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				24382815147427CF00729A45 /* main.m in Sources */,
-				24382819147427CF00729A45 /* FieldGoalChartingAppDelegate.m in Sources */,
-				2438281F147427CF00729A45 /* FieldGoalChartingViewController.m in Sources */,
+				24A1718714742C4B005028F4 /* main.m in Sources */,
+				24A1718B14742C4B005028F4 /* FieldGoalChartingAppDelegate.m in Sources */,
+				24A1719114742C4B005028F4 /* FieldGoalCharting.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		24382811147427CF00729A45 /* InfoPlist.strings */ = {
+		24A1718314742C4B005028F4 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				24382812147427CF00729A45 /* en */,
+				24A1718414742C4B005028F4 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		2438281A147427CF00729A45 /* MainWindow.xib */ = {
+		24A1718C14742C4B005028F4 /* MainWindow.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2438281B147427CF00729A45 /* en */,
+				24A1718D14742C4B005028F4 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		24382820147427CF00729A45 /* FieldGoalChartingViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				24382821147427CF00729A45 /* en */,
-			);
-			name = FieldGoalChartingViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		24382823147427CF00729A45 /* Debug */ = {
+		24A1719214742C4C005028F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,7 +211,7 @@
 			};
 			name = Debug;
 		};
-		24382824147427CF00729A45 /* Release */ = {
+		24A1719314742C4C005028F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -240,7 +230,7 @@
 			};
 			name = Release;
 		};
-		24382826147427CF00729A45 /* Debug */ = {
+		24A1719514742C4C005028F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -251,7 +241,7 @@
 			};
 			name = Debug;
 		};
-		24382827147427CF00729A45 /* Release */ = {
+		24A1719614742C4C005028F4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -265,24 +255,37 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		243827FE147427CF00729A45 /* Build configuration list for PBXProject "FieldGoalCharting" */ = {
+		24A1716E14742C49005028F4 /* Build configuration list for PBXProject "FieldGoalCharting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24382823147427CF00729A45 /* Debug */,
-				24382824147427CF00729A45 /* Release */,
+				24A1719214742C4C005028F4 /* Debug */,
+				24A1719314742C4C005028F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		24382825147427CF00729A45 /* Build configuration list for PBXNativeTarget "FieldGoalCharting" */ = {
+		24A1719414742C4C005028F4 /* Build configuration list for PBXNativeTarget "FieldGoalCharting" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24382826147427CF00729A45 /* Debug */,
-				24382827147427CF00729A45 /* Release */,
+				24A1719514742C4C005028F4 /* Debug */,
+				24A1719614742C4C005028F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		24A1718F14742C4B005028F4 /* FieldGoalCharting.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				24A1719014742C4B005028F4 /* FieldGoalCharting.xcdatamodel */,
+			);
+			currentVersion = 24A1719014742C4B005028F4 /* FieldGoalCharting.xcdatamodel */;
+			path = FieldGoalCharting.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
-	rootObject = 243827FB147427CF00729A45 /* Project object */;
+	rootObject = 24A1716B14742C49005028F4 /* Project object */;
 }
