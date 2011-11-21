@@ -7,6 +7,7 @@
 //
 
 #import "FieldGoalChartingAppDelegate.h"
+#import "HomeViewController.h"
 
 @implementation FieldGoalChartingAppDelegate
 
@@ -17,8 +18,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    HomeViewController *HomeVC = [[HomeViewController alloc] init];
+    self.window.rootViewController = HomeVC;
+    
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
+    
+    [HomeVC release];
+    
     return YES;
 }
 

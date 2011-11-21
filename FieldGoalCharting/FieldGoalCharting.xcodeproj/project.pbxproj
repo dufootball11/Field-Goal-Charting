@@ -16,6 +16,10 @@
 		24A1718B14742C4B005028F4 /* FieldGoalChartingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */; };
 		24A1718E14742C4B005028F4 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A1718C14742C4B005028F4 /* MainWindow.xib */; };
 		24A1719114742C4B005028F4 /* FieldGoalCharting.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 24A1718F14742C4B005028F4 /* FieldGoalCharting.xcdatamodeld */; };
+		24A1719E14742EBA005028F4 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A1719C14742EBA005028F4 /* HomeViewController.m */; };
+		24A1719F14742EBA005028F4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A1719D14742EBA005028F4 /* HomeViewController.xib */; };
+		24A171A7147AC186005028F4 /* EnterDataChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A171A5147AC186005028F4 /* EnterDataChartViewController.m */; };
+		24A171A8147AC186005028F4 /* EnterDataChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A171A6147AC186005028F4 /* EnterDataChartViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,12 @@
 		24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FieldGoalChartingAppDelegate.m; sourceTree = "<group>"; };
 		24A1718D14742C4B005028F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		24A1719014742C4B005028F4 /* FieldGoalCharting.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FieldGoalCharting.xcdatamodel; sourceTree = "<group>"; };
+		24A1719B14742EBA005028F4 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		24A1719C14742EBA005028F4 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		24A1719D14742EBA005028F4 /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		24A171A4147AC186005028F4 /* EnterDataChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterDataChartViewController.h; sourceTree = "<group>"; };
+		24A171A5147AC186005028F4 /* EnterDataChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterDataChartViewController.m; sourceTree = "<group>"; };
+		24A171A6147AC186005028F4 /* EnterDataChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterDataChartViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,12 @@
 			children = (
 				24A1718914742C4B005028F4 /* FieldGoalChartingAppDelegate.h */,
 				24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */,
+				24A1719B14742EBA005028F4 /* HomeViewController.h */,
+				24A1719C14742EBA005028F4 /* HomeViewController.m */,
+				24A171A4147AC186005028F4 /* EnterDataChartViewController.h */,
+				24A171A5147AC186005028F4 /* EnterDataChartViewController.m */,
+				24A171A6147AC186005028F4 /* EnterDataChartViewController.xib */,
+				24A1719D14742EBA005028F4 /* HomeViewController.xib */,
 				24A1718C14742C4B005028F4 /* MainWindow.xib */,
 				24A1718F14742C4B005028F4 /* FieldGoalCharting.xcdatamodeld */,
 				24A1718114742C4A005028F4 /* Supporting Files */,
@@ -149,6 +165,8 @@
 			files = (
 				24A1718514742C4B005028F4 /* InfoPlist.strings in Resources */,
 				24A1718E14742C4B005028F4 /* MainWindow.xib in Resources */,
+				24A1719F14742EBA005028F4 /* HomeViewController.xib in Resources */,
+				24A171A8147AC186005028F4 /* EnterDataChartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,6 +180,8 @@
 				24A1718714742C4B005028F4 /* main.m in Sources */,
 				24A1718B14742C4B005028F4 /* FieldGoalChartingAppDelegate.m in Sources */,
 				24A1719114742C4B005028F4 /* FieldGoalCharting.xcdatamodeld in Sources */,
+				24A1719E14742EBA005028F4 /* HomeViewController.m in Sources */,
+				24A171A7147AC186005028F4 /* EnterDataChartViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
