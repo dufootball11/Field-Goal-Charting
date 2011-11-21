@@ -8,6 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EnterDataChartViewController : UIViewController
+@interface EnterDataChartViewController : UIViewController {
+    IBOutlet UIButton *CancelButton;
+    IBOutlet UIButton *SaveButton;
+}
+
+@property (nonatomic, retain) IBOutlet UIButton *CancelButton;
+@property (nonatomic, retain) IBOutlet UIButton *SaveButton;
+
+- (IBAction)Cancel:(id)sender;
+- (IBAction)Save:(id)sender;
 
 @end
