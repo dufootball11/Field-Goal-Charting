@@ -7,11 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import "EnterData18_25ChartViewController.h"
 #import "EnterData26_35ViewController.h"
 #import "EnterData36_45ViewController.h"
 #import "EnterData46_55ViewController.h"
 #import "EnterData56PlusViewController.h"
+#import "EnterDataNotesViewController.h"
+
+#import "Chart.h"
 
 @class SegmentsController;
 
@@ -22,16 +26,25 @@
     IBOutlet UIBarButtonItem *CancelButton;
     IBOutlet UISegmentedControl *DistanceSegmentedContol;
     IBOutlet UIView *CurrentDistanceChartView;
+    
+    NSManagedObjectContext *managedObjectContext;  
+    NSMutableArray *chartArray; 
 }
+
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;  
+@property (nonatomic, retain) NSMutableArray *chartArray;   
 
 @property (nonatomic, retain) SegmentsController     * segmentsController;
 @property (nonatomic, retain) UISegmentedControl *DistanceSegmentedControl;
 @property (nonatomic, retain) UIView *CurrentDistanceChartView;
-/*@property (nonatomic, retain) UIViewController *enterData18_25VC;
-@property (nonatomic, retain) UIViewController *enterData26_35VC;
+@property (nonatomic, retain) EnterData18_25ChartViewController *enterData18_25VC;
+/*@property (nonatomic, retain) UIViewController *enterData26_35VC;
 @property (nonatomic, retain) UIViewController *enterData36_45VC;
 @property (nonatomic, retain) UIViewController *enterData46_55VC;
 @property (nonatomic, retain) UIViewController *enterData56PlusVC;*/
+
+@property (nonatomic, retain) EnterDataNotesViewController *enterDataNotesVC;
+@property (nonatomic, retain) UINavigationController * navigationController;
 
 - (IBAction)Cancel:(id)sender;
 - (IBAction)Save:(id)sender;

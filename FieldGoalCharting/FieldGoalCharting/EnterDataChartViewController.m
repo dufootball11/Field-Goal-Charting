@@ -18,7 +18,8 @@
 @implementation EnterDataChartViewController
 
 @synthesize DistanceSegmentedControl, CurrentDistanceChartView, segmentsController;
-//@synthesize enterData18_25VC,enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC;
+@synthesize managedObjectContext, chartArray, enterDataNotesVC, navigationController;
+@synthesize enterData18_25VC; //enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,7 +47,7 @@
     
     NSArray * viewControllers = [self segmentViewControllers];
     
-    UINavigationController * navigationController = [[[UINavigationController alloc] init] autorelease];
+    navigationController = [[[UINavigationController alloc] init] autorelease];
     
     self.segmentsController = [[SegmentsController alloc] initWithNavigationController:navigationController viewControllers:viewControllers];
     self.DistanceSegmentedControl = [[UISegmentedControl alloc] initWithItems:[viewControllers arrayByPerformingSelector:@selector(title)]];
@@ -91,11 +92,37 @@
 }
 
 - (IBAction)Save:(id)sender {
+    /*Chart *chart = (Chart *)[NSEntityDescription insertNewObjectForEntityForName:@"Chart" inManagedObjectContext:managedObjectContext];  
+    [chart setDate: [NSDate date]];
+    [chart setLeft18_20Make: (NSNumber *) enterData18_25VC.LeftMade18_20];
+    [chart setLeft18_20Miss: (NSNumber *) enterData18_25VC.Left18_20Miss];
+    [chart setMiddle18_20Make: (NSNumber *) enterData18_25VC.MiddleMade18_20];
+    [chart setMiddle18_20Miss: (NSNumber *) enterData18_25VC.Middle18_20Miss];
+    [chart setRight18_20Make: (NSNumber *) enterData18_25VC.RightMade18_20];
+    [chart setRight18_20Miss: (NSNumber *) enterData18_25VC.Right18_20Miss];
+    
+    NSError *error;  
+    
+    if(![managedObjectContext save:&error]){  
+        
+        //This is a serious error saying the record  
+        //could not be saved. Advise the user to  
+        //try again or restart the application.   
+        
+    }  
+    
+    [chartArray insertObject:chart atIndex:0]; 
+    */
+    
+    enterDataNotesVC = [[EnterDataNotesViewController alloc] init];
+    [self presentModalViewController:enterDataNotesVC animated:YES];
+
+    
 }
 
 - (NSArray *)segmentViewControllers {
     
-    UIViewController *enterData18_25VC = [[EnterData18_25ChartViewController alloc] initWithNibName:@"EnterData18_25ChartViewController" bundle:nil];
+    enterData18_25VC = [[EnterData18_25ChartViewController alloc] initWithNibName:@"EnterData18_25ChartViewController" bundle:nil];
     UIViewController *enterData26_35VC = [[EnterData26_35ViewController alloc] initWithNibName:@"EnterData26_35ViewController" bundle:nil];
     UIViewController *enterData36_45VC = [[EnterData36_45ViewController alloc] initWithNibName:@"EnterData36_45ViewController" bundle:nil];
     UIViewController *enterData46_55VC = [[EnterData46_55ViewController alloc] initWithNibName:@"EnterData46_55ViewController" bundle:nil];

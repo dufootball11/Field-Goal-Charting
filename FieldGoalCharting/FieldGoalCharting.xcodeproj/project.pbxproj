@@ -36,6 +36,9 @@
 		24CCC680147D8DA000882381 /* chart2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24CCC67F147D8DA000882381 /* chart2.png */; };
 		24CCC683147D973C00882381 /* up_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 24CCC682147D973C00882381 /* up_button.png */; };
 		24CCC685147D974900882381 /* down_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 24CCC684147D974900882381 /* down_button.png */; };
+		24D679161480312900B80FAF /* Chart.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D679151480312900B80FAF /* Chart.m */; };
+		24D6791B14803AB000B80FAF /* EnterDataNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D6791914803AB000B80FAF /* EnterDataNotesViewController.m */; };
+		24D6791C14803AB000B80FAF /* EnterDataNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +84,11 @@
 		24CCC67F147D8DA000882381 /* chart2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart2.png; sourceTree = "<group>"; };
 		24CCC682147D973C00882381 /* up_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_button.png; sourceTree = "<group>"; };
 		24CCC684147D974900882381 /* down_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_button.png; sourceTree = "<group>"; };
+		24D679141480312900B80FAF /* Chart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Chart.h; sourceTree = "<group>"; };
+		24D679151480312900B80FAF /* Chart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Chart.m; sourceTree = "<group>"; };
+		24D6791814803AB000B80FAF /* EnterDataNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterDataNotesViewController.h; sourceTree = "<group>"; };
+		24D6791914803AB000B80FAF /* EnterDataNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterDataNotesViewController.m; sourceTree = "<group>"; };
+		24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterDataNotesViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,8 @@
 		24A1718014742C4A005028F4 /* FieldGoalCharting */ = {
 			isa = PBXGroup;
 			children = (
+				24D679141480312900B80FAF /* Chart.h */,
+				24D679151480312900B80FAF /* Chart.m */,
 				24A1718914742C4B005028F4 /* FieldGoalChartingAppDelegate.h */,
 				24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */,
 				24A1719B14742EBA005028F4 /* HomeViewController.h */,
@@ -149,6 +159,8 @@
 				244BDEAD147AC98000EC880A /* EnterData46_55ViewController.m */,
 				244BDEB1147AC99700EC880A /* EnterData56PlusViewController.h */,
 				244BDEB2147AC99700EC880A /* EnterData56PlusViewController.m */,
+				24D6791814803AB000B80FAF /* EnterDataNotesViewController.h */,
+				24D6791914803AB000B80FAF /* EnterDataNotesViewController.m */,
 				24A1719D14742EBA005028F4 /* HomeViewController.xib */,
 				24A171A6147AC186005028F4 /* EnterDataChartViewController.xib */,
 				244BDE9E147AC90600EC880A /* EnterData18_25ChartViewController.xib */,
@@ -156,6 +168,7 @@
 				244BDEA9147AC95900EC880A /* EnterData36_45ViewController.xib */,
 				244BDEAE147AC98000EC880A /* EnterData46_55ViewController.xib */,
 				244BDEB3147AC99700EC880A /* EnterData56PlusViewController.xib */,
+				24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */,
 				24A1718C14742C4B005028F4 /* MainWindow.xib */,
 				24A1718F14742C4B005028F4 /* FieldGoalCharting.xcdatamodeld */,
 				24A1718114742C4A005028F4 /* Supporting Files */,
@@ -238,6 +251,7 @@
 				24CCC680147D8DA000882381 /* chart2.png in Resources */,
 				24CCC683147D973C00882381 /* up_button.png in Resources */,
 				24CCC685147D974900882381 /* down_button.png in Resources */,
+				24D6791C14803AB000B80FAF /* EnterDataNotesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +274,8 @@
 				244BDEB4147AC99800EC880A /* EnterData56PlusViewController.m in Sources */,
 				24300047147D8433007BD301 /* SegmentsController.m in Sources */,
 				2430004B147D8A01007BD301 /* NSArray+PerformSelector.m in Sources */,
+				24D679161480312900B80FAF /* Chart.m in Sources */,
+				24D6791B14803AB000B80FAF /* EnterDataNotesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

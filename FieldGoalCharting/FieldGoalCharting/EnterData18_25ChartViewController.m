@@ -201,8 +201,8 @@
 }
 
 - (IBAction)_25MiddleMissIncrease:(id)sender {
-    Middle18_20Miss = Middle18_20Miss + 1;
-    String18_20MiddleMiss.text = [NSString stringWithFormat:@"%d", Middle18_20Miss];
+    Middle21_25Miss = Middle21_25Miss + 1;
+    String21_25MiddleMiss.text = [NSString stringWithFormat:@"%d", Middle21_25Miss];
 }
 
 - (IBAction)_25RightMissIncrease:(id)sender {
