@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EnterDataNotesViewController : UIViewController 
-
-
+@interface EnterDataNotesViewController : UIViewController {
+    UITextField *titleStringTextField;
+}
+ 
+@property (nonatomic, retain) IBOutlet UITextField *titleStringTextField;
 
 @end

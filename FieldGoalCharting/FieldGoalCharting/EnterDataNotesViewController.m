@@ -9,12 +9,14 @@
 #import "EnterDataNotesViewController.h"
 
 @implementation EnterDataNotesViewController
+@synthesize titleStringTextField;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title=@"Notes";
     }
     return self;
 }
@@ -33,10 +35,12 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+
 }
 
 - (void)viewDidUnload
 {
+    [self setTitleStringTextField:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -48,4 +52,10 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (IBAction)doneWithFiles:(id)sender {
+}
+- (void)dealloc {
+    [titleStringTextField release];
+    [super dealloc];
+}
 @end

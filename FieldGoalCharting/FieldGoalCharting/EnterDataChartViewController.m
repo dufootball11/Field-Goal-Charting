@@ -111,12 +111,12 @@
         
     }  
     
-    [chartArray insertObject:chart atIndex:0]; 
-    */
     
-    enterDataNotesVC = [[EnterDataNotesViewController alloc] init];
-    [self presentModalViewController:enterDataNotesVC animated:YES];
+    [chartArray insertObject:chart atIndex:0];     
+    */
+}
 
+-(void) enterNotesData {
     
 }
 
@@ -127,8 +127,9 @@
     UIViewController *enterData36_45VC = [[EnterData36_45ViewController alloc] initWithNibName:@"EnterData36_45ViewController" bundle:nil];
     UIViewController *enterData46_55VC = [[EnterData46_55ViewController alloc] initWithNibName:@"EnterData46_55ViewController" bundle:nil];
     UIViewController *enterData56PlusVC = [[EnterData56PlusViewController alloc] initWithNibName:@"EnterData56PlusViewController" bundle:nil];
+    enterDataNotesVC = [[EnterDataNotesViewController alloc] initWithNibName:@"EnterDataNotesViewController" bundle:nil];
     
-    NSArray * viewControllers = [NSArray arrayWithObjects:enterData18_25VC,enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC, nil];
+    NSArray * viewControllers = [NSArray arrayWithObjects:enterData18_25VC,enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC, enterDataNotesVC, nil];
     //NSLog(@"%@",viewControllers);
     
     return viewControllers;
