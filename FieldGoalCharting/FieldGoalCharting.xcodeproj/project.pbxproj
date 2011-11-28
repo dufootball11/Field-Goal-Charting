@@ -39,6 +39,8 @@
 		24D679161480312900B80FAF /* Chart.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D679151480312900B80FAF /* Chart.m */; };
 		24D6791B14803AB000B80FAF /* EnterDataNotesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24D6791914803AB000B80FAF /* EnterDataNotesViewController.m */; };
 		24D6791C14803AB000B80FAF /* EnterDataNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */; };
+		24DB8E0F14834FE100DD07AC /* ViewStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8E0D14834FE000DD07AC /* ViewStatsViewController.m */; };
+		24DB8E1014834FE100DD07AC /* ViewStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E0E14834FE100DD07AC /* ViewStatsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,9 @@
 		24D6791814803AB000B80FAF /* EnterDataNotesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterDataNotesViewController.h; sourceTree = "<group>"; };
 		24D6791914803AB000B80FAF /* EnterDataNotesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterDataNotesViewController.m; sourceTree = "<group>"; };
 		24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterDataNotesViewController.xib; sourceTree = "<group>"; };
+		24DB8E0C14834FE000DD07AC /* ViewStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewStatsViewController.h; sourceTree = "<group>"; };
+		24DB8E0D14834FE000DD07AC /* ViewStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewStatsViewController.m; sourceTree = "<group>"; };
+		24DB8E0E14834FE100DD07AC /* ViewStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewStatsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +152,7 @@
 				2430004A147D8A01007BD301 /* NSArray+PerformSelector.m */,
 				24300045147D8433007BD301 /* SegmentsController.h */,
 				24300046147D8433007BD301 /* SegmentsController.m */,
+				24DB8E1114834FF400DD07AC /* View Stats */,
 				24DB8E0A14834DA000DD07AC /* Enter Stats */,
 				24A1718C14742C4B005028F4 /* MainWindow.xib */,
 				24A1719D14742EBA005028F4 /* HomeViewController.xib */,
@@ -197,6 +203,16 @@
 				24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */,
 			);
 			name = "Enter Stats";
+			sourceTree = "<group>";
+		};
+		24DB8E1114834FF400DD07AC /* View Stats */ = {
+			isa = PBXGroup;
+			children = (
+				24DB8E0C14834FE000DD07AC /* ViewStatsViewController.h */,
+				24DB8E0D14834FE000DD07AC /* ViewStatsViewController.m */,
+				24DB8E0E14834FE100DD07AC /* ViewStatsViewController.xib */,
+			);
+			name = "View Stats";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +276,7 @@
 				24CCC683147D973C00882381 /* up_button.png in Resources */,
 				24CCC685147D974900882381 /* down_button.png in Resources */,
 				24D6791C14803AB000B80FAF /* EnterDataNotesViewController.xib in Resources */,
+				24DB8E1014834FE100DD07AC /* ViewStatsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +301,7 @@
 				2430004B147D8A01007BD301 /* NSArray+PerformSelector.m in Sources */,
 				24D679161480312900B80FAF /* Chart.m in Sources */,
 				24D6791B14803AB000B80FAF /* EnterDataNotesViewController.m in Sources */,
+				24DB8E0F14834FE100DD07AC /* ViewStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
