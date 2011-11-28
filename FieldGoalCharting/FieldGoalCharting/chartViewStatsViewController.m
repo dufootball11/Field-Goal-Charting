@@ -1,22 +1,21 @@
 //
-//  HomeViewController.m
+//  chartViewStatsViewController.m
 //  FieldGoalCharting
 //
-//  Created by Fries on 11/16/11.
+//  Created by Fries on 11/27/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "HomeViewController.h"
-#import "EnterDataChartViewController.h"
+#import "chartViewStatsViewController.h"
 
-@implementation HomeViewController
-@synthesize EnterStatsButton, ViewStatsButton;
+@implementation chartViewStatsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         // Custom initialization
+        self.title = @"Chart";
     }
     return self;
 }
@@ -39,9 +38,6 @@
 
 - (void)viewDidUnload
 {
-    [self setEnterStatsButton:nil];
-    [ViewStatsButton release];
-    ViewStatsButton = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -53,17 +49,4 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)dealloc {
-    [EnterStatsButton release];
-    [ViewStatsButton release];
-    [super dealloc];
-}
-- (IBAction)EnterStats:(id)sender {
-    EnterDataChartViewController *enterDataChartVC = [[EnterDataChartViewController alloc] init];
-    //[self.view addSubview:enterDataChartVC.view];
-    [self presentModalViewController:enterDataChartVC animated:NO];
-}
-
-- (IBAction)ViewStats:(id)sender {
-}
 @end

@@ -41,6 +41,14 @@
 		24D6791C14803AB000B80FAF /* EnterDataNotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */; };
 		24DB8E0F14834FE100DD07AC /* ViewStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8E0D14834FE000DD07AC /* ViewStatsViewController.m */; };
 		24DB8E1014834FE100DD07AC /* ViewStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E0E14834FE100DD07AC /* ViewStatsViewController.xib */; };
+		24DB8E19148355AE00DD07AC /* chartViewStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8E17148355AE00DD07AC /* chartViewStatsViewController.m */; };
+		24DB8E1A148355AE00DD07AC /* chartViewStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E18148355AE00DD07AC /* chartViewStatsViewController.xib */; };
+		24DB8E1F148355D900DD07AC /* fieldViewStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8E1D148355D800DD07AC /* fieldViewStatsViewController.m */; };
+		24DB8E20148355D900DD07AC /* fieldViewStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E1E148355D800DD07AC /* fieldViewStatsViewController.xib */; };
+		24DB8E241483560000DD07AC /* notesViewStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8E221483560000DD07AC /* notesViewStatsViewController.m */; };
+		24DB8E251483560000DD07AC /* notesViewStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E231483560000DD07AC /* notesViewStatsViewController.xib */; };
+		24DB8E351483717A00DD07AC /* ViewStatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8E331483717900DD07AC /* ViewStatsTableViewController.m */; };
+		24DB8E361483717A00DD07AC /* ViewStatsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E341483717900DD07AC /* ViewStatsTableViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +102,18 @@
 		24DB8E0C14834FE000DD07AC /* ViewStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewStatsViewController.h; sourceTree = "<group>"; };
 		24DB8E0D14834FE000DD07AC /* ViewStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewStatsViewController.m; sourceTree = "<group>"; };
 		24DB8E0E14834FE100DD07AC /* ViewStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewStatsViewController.xib; sourceTree = "<group>"; };
+		24DB8E16148355AE00DD07AC /* chartViewStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = chartViewStatsViewController.h; sourceTree = "<group>"; };
+		24DB8E17148355AE00DD07AC /* chartViewStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = chartViewStatsViewController.m; sourceTree = "<group>"; };
+		24DB8E18148355AE00DD07AC /* chartViewStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = chartViewStatsViewController.xib; sourceTree = "<group>"; };
+		24DB8E1C148355D800DD07AC /* fieldViewStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fieldViewStatsViewController.h; sourceTree = "<group>"; };
+		24DB8E1D148355D800DD07AC /* fieldViewStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fieldViewStatsViewController.m; sourceTree = "<group>"; };
+		24DB8E1E148355D800DD07AC /* fieldViewStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = fieldViewStatsViewController.xib; sourceTree = "<group>"; };
+		24DB8E211483560000DD07AC /* notesViewStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = notesViewStatsViewController.h; sourceTree = "<group>"; };
+		24DB8E221483560000DD07AC /* notesViewStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = notesViewStatsViewController.m; sourceTree = "<group>"; };
+		24DB8E231483560000DD07AC /* notesViewStatsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = notesViewStatsViewController.xib; sourceTree = "<group>"; };
+		24DB8E321483717800DD07AC /* ViewStatsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewStatsTableViewController.h; sourceTree = "<group>"; };
+		24DB8E331483717900DD07AC /* ViewStatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewStatsTableViewController.m; sourceTree = "<group>"; };
+		24DB8E341483717900DD07AC /* ViewStatsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewStatsTableViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +230,19 @@
 			children = (
 				24DB8E0C14834FE000DD07AC /* ViewStatsViewController.h */,
 				24DB8E0D14834FE000DD07AC /* ViewStatsViewController.m */,
+				24DB8E16148355AE00DD07AC /* chartViewStatsViewController.h */,
+				24DB8E17148355AE00DD07AC /* chartViewStatsViewController.m */,
+				24DB8E1C148355D800DD07AC /* fieldViewStatsViewController.h */,
+				24DB8E1D148355D800DD07AC /* fieldViewStatsViewController.m */,
+				24DB8E211483560000DD07AC /* notesViewStatsViewController.h */,
+				24DB8E221483560000DD07AC /* notesViewStatsViewController.m */,
+				24DB8E321483717800DD07AC /* ViewStatsTableViewController.h */,
+				24DB8E331483717900DD07AC /* ViewStatsTableViewController.m */,
+				24DB8E341483717900DD07AC /* ViewStatsTableViewController.xib */,
 				24DB8E0E14834FE100DD07AC /* ViewStatsViewController.xib */,
+				24DB8E18148355AE00DD07AC /* chartViewStatsViewController.xib */,
+				24DB8E1E148355D800DD07AC /* fieldViewStatsViewController.xib */,
+				24DB8E231483560000DD07AC /* notesViewStatsViewController.xib */,
 			);
 			name = "View Stats";
 			sourceTree = "<group>";
@@ -277,6 +309,10 @@
 				24CCC685147D974900882381 /* down_button.png in Resources */,
 				24D6791C14803AB000B80FAF /* EnterDataNotesViewController.xib in Resources */,
 				24DB8E1014834FE100DD07AC /* ViewStatsViewController.xib in Resources */,
+				24DB8E1A148355AE00DD07AC /* chartViewStatsViewController.xib in Resources */,
+				24DB8E20148355D900DD07AC /* fieldViewStatsViewController.xib in Resources */,
+				24DB8E251483560000DD07AC /* notesViewStatsViewController.xib in Resources */,
+				24DB8E361483717A00DD07AC /* ViewStatsTableViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +338,10 @@
 				24D679161480312900B80FAF /* Chart.m in Sources */,
 				24D6791B14803AB000B80FAF /* EnterDataNotesViewController.m in Sources */,
 				24DB8E0F14834FE100DD07AC /* ViewStatsViewController.m in Sources */,
+				24DB8E19148355AE00DD07AC /* chartViewStatsViewController.m in Sources */,
+				24DB8E1F148355D900DD07AC /* fieldViewStatsViewController.m in Sources */,
+				24DB8E241483560000DD07AC /* notesViewStatsViewController.m in Sources */,
+				24DB8E351483717A00DD07AC /* ViewStatsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

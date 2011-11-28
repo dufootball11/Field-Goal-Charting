@@ -14,6 +14,7 @@
 #import "EnterData46_55ViewController.h"
 #import "EnterData56PlusViewController.h"
 #import "EnterDataNotesViewController.h"
+#import "ViewStatsViewController.h"
 
 #import "Chart.h"
 
@@ -26,6 +27,7 @@
     IBOutlet UIBarButtonItem *CancelButton;
     IBOutlet UISegmentedControl *DistanceSegmentedContol;
     IBOutlet UIView *CurrentDistanceChartView;
+    BOOL viewDismissed;
     
     NSManagedObjectContext *managedObjectContext;  
     NSMutableArray *chartArray; 
@@ -37,14 +39,16 @@
 @property (nonatomic, retain) SegmentsController     * segmentsController;
 @property (nonatomic, retain) UISegmentedControl *DistanceSegmentedControl;
 @property (nonatomic, retain) UIView *CurrentDistanceChartView;
+@property (nonatomic, retain) UINavigationController * navigationController;
+
 @property (nonatomic, retain) EnterData18_25ChartViewController *enterData18_25VC;
 @property (nonatomic, retain) EnterData26_35ViewController *enterData26_35VC;
 @property (nonatomic, retain) EnterData36_45ViewController *enterData36_45VC;
 @property (nonatomic, retain) EnterData46_55ViewController *enterData46_55VC;
 @property (nonatomic, retain) EnterData56PlusViewController *enterData56PlusVC;
-
 @property (nonatomic, retain) EnterDataNotesViewController *enterDataNotesVC;
-@property (nonatomic, retain) UINavigationController * navigationController;
+
+@property (nonatomic, retain) ViewStatsViewController *viewStatsVC;
 
 - (IBAction)Cancel:(id)sender;
 - (IBAction)Save:(id)sender;

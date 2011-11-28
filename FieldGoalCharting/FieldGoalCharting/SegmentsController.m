@@ -21,6 +21,11 @@
                    viewControllers:(NSArray *)theViewControllers {
     if (self = [super init]) {
         self.navigationController   = aNavigationController;
+        
+        UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Done" style:UIBarButtonItemStyleDone target:self action:@selector(doneWithViews:)];          
+        self.navigationController.topViewController.navigationItem.rightBarButtonItem = anotherButton;
+        [anotherButton release];
+        
         self.viewControllers = theViewControllers;
     }
     return self;

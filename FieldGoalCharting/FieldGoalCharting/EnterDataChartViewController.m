@@ -20,6 +20,7 @@
 @synthesize DistanceSegmentedControl, CurrentDistanceChartView, segmentsController;
 @synthesize managedObjectContext, chartArray, enterDataNotesVC, navigationController;
 @synthesize enterData18_25VC, enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC;
+@synthesize viewStatsVC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -63,9 +64,6 @@
     [CurrentDistanceChartView addSubview:navigationController.view];
 }
 
-- (IBAction)ChangeDistanceSegment:(id)sender {
-}
-
 - (void)viewDidUnload
 {
     [CancelButton release];
@@ -88,11 +86,11 @@
 }
 
 - (IBAction)Cancel:(id)sender {
-    [self.view removeFromSuperview];
+    [self dismissModalViewControllerAnimated:NO];
 }
 
 - (IBAction)Save:(id)sender {
-    
+    /*
     Chart *chart = (Chart *)[NSEntityDescription insertNewObjectForEntityForName:@"Chart" inManagedObjectContext:managedObjectContext];  
     
     [chart setDate: [NSDate date]];
@@ -117,12 +115,17 @@
     
     
     [chartArray insertObject:chart atIndex:0];     
+    */
     
+    viewStatsVC = [[ViewStatsViewController alloc] init];
+
+    [self presentModalViewController:viewStatsVC animated:YES];
 }
 
--(void) enterNotesData {
-    
+-(void) viewDidDisappear:(BOOL)animated {
+    //[self.parentViewController dismissModalViewControllerAnimated:YES];
 }
+
 
 - (NSArray *)segmentViewControllers {
     
