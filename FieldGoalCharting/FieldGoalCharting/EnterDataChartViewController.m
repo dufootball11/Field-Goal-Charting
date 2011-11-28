@@ -19,7 +19,7 @@
 
 @synthesize DistanceSegmentedControl, CurrentDistanceChartView, segmentsController;
 @synthesize managedObjectContext, chartArray, enterDataNotesVC, navigationController;
-@synthesize enterData18_25VC; //enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC;
+@synthesize enterData18_25VC, enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -92,7 +92,9 @@
 }
 
 - (IBAction)Save:(id)sender {
-    /*Chart *chart = (Chart *)[NSEntityDescription insertNewObjectForEntityForName:@"Chart" inManagedObjectContext:managedObjectContext];  
+    
+    Chart *chart = (Chart *)[NSEntityDescription insertNewObjectForEntityForName:@"Chart" inManagedObjectContext:managedObjectContext];  
+    
     [chart setDate: [NSDate date]];
     [chart setLeft18_20Make: (NSNumber *) enterData18_25VC.LeftMade18_20];
     [chart setLeft18_20Miss: (NSNumber *) enterData18_25VC.Left18_20Miss];
@@ -100,6 +102,8 @@
     [chart setMiddle18_20Miss: (NSNumber *) enterData18_25VC.Middle18_20Miss];
     [chart setRight18_20Make: (NSNumber *) enterData18_25VC.RightMade18_20];
     [chart setRight18_20Miss: (NSNumber *) enterData18_25VC.Right18_20Miss];
+    
+    [chart setTitle:[enterDataNotesVC.titleStringTextField text]];
     
     NSError *error;  
     
@@ -113,7 +117,7 @@
     
     
     [chartArray insertObject:chart atIndex:0];     
-    */
+    
 }
 
 -(void) enterNotesData {
@@ -123,14 +127,13 @@
 - (NSArray *)segmentViewControllers {
     
     enterData18_25VC = [[EnterData18_25ChartViewController alloc] initWithNibName:@"EnterData18_25ChartViewController" bundle:nil];
-    UIViewController *enterData26_35VC = [[EnterData26_35ViewController alloc] initWithNibName:@"EnterData26_35ViewController" bundle:nil];
-    UIViewController *enterData36_45VC = [[EnterData36_45ViewController alloc] initWithNibName:@"EnterData36_45ViewController" bundle:nil];
-    UIViewController *enterData46_55VC = [[EnterData46_55ViewController alloc] initWithNibName:@"EnterData46_55ViewController" bundle:nil];
-    UIViewController *enterData56PlusVC = [[EnterData56PlusViewController alloc] initWithNibName:@"EnterData56PlusViewController" bundle:nil];
+    enterData26_35VC = [[EnterData26_35ViewController alloc] initWithNibName:@"EnterData26_35ViewController" bundle:nil];
+    enterData36_45VC = [[EnterData36_45ViewController alloc] initWithNibName:@"EnterData36_45ViewController" bundle:nil];
+    enterData46_55VC = [[EnterData46_55ViewController alloc] initWithNibName:@"EnterData46_55ViewController" bundle:nil];
+    enterData56PlusVC = [[EnterData56PlusViewController alloc] initWithNibName:@"EnterData56PlusViewController" bundle:nil];
     enterDataNotesVC = [[EnterDataNotesViewController alloc] initWithNibName:@"EnterDataNotesViewController" bundle:nil];
     
     NSArray * viewControllers = [NSArray arrayWithObjects:enterData18_25VC,enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC, enterDataNotesVC, nil];
-    //NSLog(@"%@",viewControllers);
     
     return viewControllers;
 }

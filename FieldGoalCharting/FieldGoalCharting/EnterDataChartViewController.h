@@ -38,16 +38,15 @@
 @property (nonatomic, retain) UISegmentedControl *DistanceSegmentedControl;
 @property (nonatomic, retain) UIView *CurrentDistanceChartView;
 @property (nonatomic, retain) EnterData18_25ChartViewController *enterData18_25VC;
-/*@property (nonatomic, retain) UIViewController *enterData26_35VC;
-@property (nonatomic, retain) UIViewController *enterData36_45VC;
-@property (nonatomic, retain) UIViewController *enterData46_55VC;
-@property (nonatomic, retain) UIViewController *enterData56PlusVC;*/
+@property (nonatomic, retain) EnterData26_35ViewController *enterData26_35VC;
+@property (nonatomic, retain) EnterData36_45ViewController *enterData36_45VC;
+@property (nonatomic, retain) EnterData46_55ViewController *enterData46_55VC;
+@property (nonatomic, retain) EnterData56PlusViewController *enterData56PlusVC;
 
 @property (nonatomic, retain) EnterDataNotesViewController *enterDataNotesVC;
 @property (nonatomic, retain) UINavigationController * navigationController;
 
 - (IBAction)Cancel:(id)sender;
 - (IBAction)Save:(id)sender;
-//- (IBAction)ChangeDistanceSegment:(id)sender;
 
 @end

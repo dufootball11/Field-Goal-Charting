@@ -143,33 +143,13 @@
 				24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */,
 				24A1719B14742EBA005028F4 /* HomeViewController.h */,
 				24A1719C14742EBA005028F4 /* HomeViewController.m */,
-				24A171A4147AC186005028F4 /* EnterDataChartViewController.h */,
-				24A171A5147AC186005028F4 /* EnterDataChartViewController.m */,
 				24300049147D8A01007BD301 /* NSArray+PerformSelector.h */,
 				2430004A147D8A01007BD301 /* NSArray+PerformSelector.m */,
 				24300045147D8433007BD301 /* SegmentsController.h */,
 				24300046147D8433007BD301 /* SegmentsController.m */,
-				244BDE9C147AC90600EC880A /* EnterData18_25ChartViewController.h */,
-				244BDE9D147AC90600EC880A /* EnterData18_25ChartViewController.m */,
-				244BDEA2147AC92800EC880A /* EnterData26_35ViewController.h */,
-				244BDEA3147AC92800EC880A /* EnterData26_35ViewController.m */,
-				244BDEA7147AC95900EC880A /* EnterData36_45ViewController.h */,
-				244BDEA8147AC95900EC880A /* EnterData36_45ViewController.m */,
-				244BDEAC147AC98000EC880A /* EnterData46_55ViewController.h */,
-				244BDEAD147AC98000EC880A /* EnterData46_55ViewController.m */,
-				244BDEB1147AC99700EC880A /* EnterData56PlusViewController.h */,
-				244BDEB2147AC99700EC880A /* EnterData56PlusViewController.m */,
-				24D6791814803AB000B80FAF /* EnterDataNotesViewController.h */,
-				24D6791914803AB000B80FAF /* EnterDataNotesViewController.m */,
-				24A1719D14742EBA005028F4 /* HomeViewController.xib */,
-				24A171A6147AC186005028F4 /* EnterDataChartViewController.xib */,
-				244BDE9E147AC90600EC880A /* EnterData18_25ChartViewController.xib */,
-				244BDEA4147AC92800EC880A /* EnterData26_35ViewController.xib */,
-				244BDEA9147AC95900EC880A /* EnterData36_45ViewController.xib */,
-				244BDEAE147AC98000EC880A /* EnterData46_55ViewController.xib */,
-				244BDEB3147AC99700EC880A /* EnterData56PlusViewController.xib */,
-				24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */,
+				24DB8E0A14834DA000DD07AC /* Enter Stats */,
 				24A1718C14742C4B005028F4 /* MainWindow.xib */,
+				24A1719D14742EBA005028F4 /* HomeViewController.xib */,
 				24A1718F14742C4B005028F4 /* FieldGoalCharting.xcdatamodeld */,
 				24A1718114742C4A005028F4 /* Supporting Files */,
 			);
@@ -189,6 +169,34 @@
 				24A1718814742C4B005028F4 /* FieldGoalCharting-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		24DB8E0A14834DA000DD07AC /* Enter Stats */ = {
+			isa = PBXGroup;
+			children = (
+				24A171A4147AC186005028F4 /* EnterDataChartViewController.h */,
+				24A171A5147AC186005028F4 /* EnterDataChartViewController.m */,
+				244BDE9C147AC90600EC880A /* EnterData18_25ChartViewController.h */,
+				244BDE9D147AC90600EC880A /* EnterData18_25ChartViewController.m */,
+				244BDEA2147AC92800EC880A /* EnterData26_35ViewController.h */,
+				244BDEA3147AC92800EC880A /* EnterData26_35ViewController.m */,
+				244BDEA7147AC95900EC880A /* EnterData36_45ViewController.h */,
+				244BDEA8147AC95900EC880A /* EnterData36_45ViewController.m */,
+				244BDEAC147AC98000EC880A /* EnterData46_55ViewController.h */,
+				244BDEAD147AC98000EC880A /* EnterData46_55ViewController.m */,
+				244BDEB1147AC99700EC880A /* EnterData56PlusViewController.h */,
+				244BDEB2147AC99700EC880A /* EnterData56PlusViewController.m */,
+				24D6791814803AB000B80FAF /* EnterDataNotesViewController.h */,
+				24D6791914803AB000B80FAF /* EnterDataNotesViewController.m */,
+				24A171A6147AC186005028F4 /* EnterDataChartViewController.xib */,
+				244BDE9E147AC90600EC880A /* EnterData18_25ChartViewController.xib */,
+				244BDEA4147AC92800EC880A /* EnterData26_35ViewController.xib */,
+				244BDEA9147AC95900EC880A /* EnterData36_45ViewController.xib */,
+				244BDEAE147AC98000EC880A /* EnterData46_55ViewController.xib */,
+				244BDEB3147AC99700EC880A /* EnterData56PlusViewController.xib */,
+				24D6791A14803AB000B80FAF /* EnterDataNotesViewController.xib */,
+			);
+			name = "Enter Stats";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
