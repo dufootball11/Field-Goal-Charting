@@ -49,6 +49,10 @@
 		24DB8E251483560000DD07AC /* notesViewStatsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E231483560000DD07AC /* notesViewStatsViewController.xib */; };
 		24DB8E351483717A00DD07AC /* ViewStatsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DB8E331483717900DD07AC /* ViewStatsTableViewController.m */; };
 		24DB8E361483717A00DD07AC /* ViewStatsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E341483717900DD07AC /* ViewStatsTableViewController.xib */; };
+		24DB8E391484B57600DD07AC /* chart56+.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E371484B57600DD07AC /* chart56+.png */; };
+		24DB8E3A1484B57600DD07AC /* chart.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E381484B57600DD07AC /* chart.png */; };
+		24DB8E3D1484BC6B00DD07AC /* fieldview.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E3B1484BC6B00DD07AC /* fieldview.png */; };
+		24DB8E3E1484BC6B00DD07AC /* chart_viewstats.png in Resources */ = {isa = PBXBuildFile; fileRef = 24DB8E3C1484BC6B00DD07AC /* chart_viewstats.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +118,11 @@
 		24DB8E321483717800DD07AC /* ViewStatsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewStatsTableViewController.h; sourceTree = "<group>"; };
 		24DB8E331483717900DD07AC /* ViewStatsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewStatsTableViewController.m; sourceTree = "<group>"; };
 		24DB8E341483717900DD07AC /* ViewStatsTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewStatsTableViewController.xib; sourceTree = "<group>"; };
+		24DB8E371484B57600DD07AC /* chart56+.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "chart56+.png"; sourceTree = "<group>"; };
+		24DB8E381484B57600DD07AC /* chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart.png; sourceTree = "<group>"; };
+		24DB8E3B1484BC6B00DD07AC /* fieldview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fieldview.png; sourceTree = "<group>"; };
+		24DB8E3C1484BC6B00DD07AC /* chart_viewstats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart_viewstats.png; sourceTree = "<group>"; };
+		24DB8E431484D22E00DD07AC /* SetFieldViewDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetFieldViewDataDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +173,7 @@
 			children = (
 				24D679141480312900B80FAF /* Chart.h */,
 				24D679151480312900B80FAF /* Chart.m */,
+				24DB8E431484D22E00DD07AC /* SetFieldViewDataDelegate.h */,
 				24A1718914742C4B005028F4 /* FieldGoalChartingAppDelegate.h */,
 				24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */,
 				24A1719B14742EBA005028F4 /* HomeViewController.h */,
@@ -185,6 +195,10 @@
 		24A1718114742C4A005028F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24DB8E3B1484BC6B00DD07AC /* fieldview.png */,
+				24DB8E3C1484BC6B00DD07AC /* chart_viewstats.png */,
+				24DB8E371484B57600DD07AC /* chart56+.png */,
+				24DB8E381484B57600DD07AC /* chart.png */,
 				24CCC684147D974900882381 /* down_button.png */,
 				24CCC682147D973C00882381 /* up_button.png */,
 				244BDEB6147D802E00EC880A /* chart1.png */,
@@ -313,6 +327,10 @@
 				24DB8E20148355D900DD07AC /* fieldViewStatsViewController.xib in Resources */,
 				24DB8E251483560000DD07AC /* notesViewStatsViewController.xib in Resources */,
 				24DB8E361483717A00DD07AC /* ViewStatsTableViewController.xib in Resources */,
+				24DB8E391484B57600DD07AC /* chart56+.png in Resources */,
+				24DB8E3A1484B57600DD07AC /* chart.png in Resources */,
+				24DB8E3D1484BC6B00DD07AC /* fieldview.png in Resources */,
+				24DB8E3E1484BC6B00DD07AC /* chart_viewstats.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

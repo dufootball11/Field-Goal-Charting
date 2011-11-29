@@ -48,6 +48,13 @@
     Left26_30Miss = 0;
     Right26_30Miss = 0;
     Middle26_30Miss = 0;
+    
+    LeftMade31_35 = 0;
+    MiddleMade31_35 = 0;
+    RightMade31_35 = 0;
+    Left31_35Miss = 0;
+    Right31_35Miss = 0;
+    Middle31_35Miss = 0;
 }
 
 //18-20 yards

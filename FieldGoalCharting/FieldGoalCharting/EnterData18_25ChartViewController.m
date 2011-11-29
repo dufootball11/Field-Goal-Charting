@@ -47,6 +47,13 @@
     Left18_20Miss = 0;
     Right18_20Miss = 0;
     Middle18_20Miss = 0;
+    
+    LeftMade21_25 = 0;
+    MiddleMade21_25 = 0;
+    RightMade21_25 = 0;
+    Left21_25Miss = 0;
+    Right21_25Miss = 0;
+    Middle21_25Miss = 0;
 }
 
 - (void)viewDidUnload

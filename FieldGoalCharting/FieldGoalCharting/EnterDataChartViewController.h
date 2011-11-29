@@ -16,11 +16,13 @@
 #import "EnterDataNotesViewController.h"
 #import "ViewStatsViewController.h"
 
+#import "SetFieldViewDataDelegate.h"
+
 #import "Chart.h"
 
 @class SegmentsController;
 
-@interface EnterDataChartViewController : UIViewController {
+@interface EnterDataChartViewController : UIViewController <SetFieldViewDataDelegate> {
 
     SegmentsController *segmentsController;
     IBOutlet UIBarButtonItem *SaveButton;
@@ -28,12 +30,12 @@
     IBOutlet UISegmentedControl *DistanceSegmentedContol;
     IBOutlet UIView *CurrentDistanceChartView;
     BOOL viewDismissed;
-    
-    NSManagedObjectContext *managedObjectContext;  
+     
     NSMutableArray *chartArray; 
 }
 
-@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;  
+@property (nonatomic, retain) UIColor *greenViewColor;
+ 
 @property (nonatomic, retain) NSMutableArray *chartArray;   
 
 @property (nonatomic, retain) SegmentsController     * segmentsController;
