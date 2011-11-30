@@ -20,6 +20,8 @@
 		244BDEB4147AC99800EC880A /* EnterData56PlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 244BDEB2147AC99700EC880A /* EnterData56PlusViewController.m */; };
 		244BDEB5147AC99800EC880A /* EnterData56PlusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 244BDEB3147AC99700EC880A /* EnterData56PlusViewController.xib */; };
 		244BDEB7147D802E00EC880A /* chart1.png in Resources */ = {isa = PBXBuildFile; fileRef = 244BDEB6147D802E00EC880A /* chart1.png */; };
+		24966D561486A51F007E2EF0 /* home_bkgrnd.png in Resources */ = {isa = PBXBuildFile; fileRef = 24966D551486A51F007E2EF0 /* home_bkgrnd.png */; };
+		24966D581486A6FF007E2EF0 /* home_bck.png in Resources */ = {isa = PBXBuildFile; fileRef = 24966D571486A6FF007E2EF0 /* home_bck.png */; };
 		24A1717914742C4A005028F4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A1717814742C4A005028F4 /* UIKit.framework */; };
 		24A1717B14742C4A005028F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A1717A14742C4A005028F4 /* Foundation.framework */; };
 		24A1717D14742C4A005028F4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A1717C14742C4A005028F4 /* CoreGraphics.framework */; };
@@ -76,6 +78,8 @@
 		244BDEB2147AC99700EC880A /* EnterData56PlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterData56PlusViewController.m; sourceTree = "<group>"; };
 		244BDEB3147AC99700EC880A /* EnterData56PlusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterData56PlusViewController.xib; sourceTree = "<group>"; };
 		244BDEB6147D802E00EC880A /* chart1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart1.png; sourceTree = "<group>"; };
+		24966D551486A51F007E2EF0 /* home_bkgrnd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_bkgrnd.png; sourceTree = "<group>"; };
+		24966D571486A6FF007E2EF0 /* home_bck.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home_bck.png; sourceTree = "<group>"; };
 		24A1717414742C4A005028F4 /* FieldGoalCharting.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FieldGoalCharting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24A1717814742C4A005028F4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		24A1717A14742C4A005028F4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -193,6 +197,8 @@
 		24A1718114742C4A005028F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24966D571486A6FF007E2EF0 /* home_bck.png */,
+				24966D551486A51F007E2EF0 /* home_bkgrnd.png */,
 				24DB8E3B1484BC6B00DD07AC /* fieldview.png */,
 				24DB8E3C1484BC6B00DD07AC /* chart_viewstats.png */,
 				24DB8E371484B57600DD07AC /* chart56+.png */,
@@ -329,6 +335,8 @@
 				24DB8E3A1484B57600DD07AC /* chart.png in Resources */,
 				24DB8E3D1484BC6B00DD07AC /* fieldview.png in Resources */,
 				24DB8E3E1484BC6B00DD07AC /* chart_viewstats.png in Resources */,
+				24966D561486A51F007E2EF0 /* home_bkgrnd.png in Resources */,
+				24966D581486A6FF007E2EF0 /* home_bck.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
