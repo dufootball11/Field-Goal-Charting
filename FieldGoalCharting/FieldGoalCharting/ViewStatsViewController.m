@@ -30,7 +30,7 @@
 @synthesize _55LeftMake, _55LeftMiss, _55MiddleMake, _55MiddleMiss, _55RightMake, _55RightMiss;
 @synthesize _56LeftMake, _56LeftMiss, _56MiddleMake, _56MiddleMiss, _56RightMake, _56RightMiss;
 
-@synthesize delegate, greenViewColor;
+@synthesize greenViewColor;
 @synthesize titleString, locationString, weatherString, windString, notesString;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

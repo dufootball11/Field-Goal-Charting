@@ -12,20 +12,16 @@
 #import "fieldViewStatsViewController.h"
 #import "notesViewStatsViewController.h"
 
-#import "SetFieldViewDataDelegate.h"
-
 @class SegmentsController;
 
 @interface ViewStatsViewController : UIViewController {
     SegmentsController *segmentsController;
     IBOutlet UISegmentedControl *viewSegmentedControl;
     IBOutlet UIView *currentStatView;
-    id <SetFieldViewDataDelegate> delegate;
     double _20LeftMiss;
     double _20LeftMake;
 }
 
-@property (retain) id delegate;
 @property (nonatomic, retain) UIColor *greenViewColor;
 @property (nonatomic, copy) NSString *titleString;
 @property (nonatomic, copy) NSString *weatherString;

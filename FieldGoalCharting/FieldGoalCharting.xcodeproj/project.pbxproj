@@ -122,7 +122,6 @@
 		24DB8E381484B57600DD07AC /* chart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart.png; sourceTree = "<group>"; };
 		24DB8E3B1484BC6B00DD07AC /* fieldview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fieldview.png; sourceTree = "<group>"; };
 		24DB8E3C1484BC6B00DD07AC /* chart_viewstats.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart_viewstats.png; sourceTree = "<group>"; };
-		24DB8E431484D22E00DD07AC /* SetFieldViewDataDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetFieldViewDataDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,7 +172,6 @@
 			children = (
 				24D679141480312900B80FAF /* Chart.h */,
 				24D679151480312900B80FAF /* Chart.m */,
-				24DB8E431484D22E00DD07AC /* SetFieldViewDataDelegate.h */,
 				24A1718914742C4B005028F4 /* FieldGoalChartingAppDelegate.h */,
 				24A1718A14742C4B005028F4 /* FieldGoalChartingAppDelegate.m */,
 				24A1719B14742EBA005028F4 /* HomeViewController.h */,
@@ -182,11 +180,11 @@
 				2430004A147D8A01007BD301 /* NSArray+PerformSelector.m */,
 				24300045147D8433007BD301 /* SegmentsController.h */,
 				24300046147D8433007BD301 /* SegmentsController.m */,
-				24DB8E1114834FF400DD07AC /* View Stats */,
-				24DB8E0A14834DA000DD07AC /* Enter Stats */,
 				24A1718C14742C4B005028F4 /* MainWindow.xib */,
 				24A1719D14742EBA005028F4 /* HomeViewController.xib */,
 				24A1718F14742C4B005028F4 /* FieldGoalCharting.xcdatamodeld */,
+				24DB8E1114834FF400DD07AC /* View Stats */,
+				24DB8E0A14834DA000DD07AC /* Enter Stats */,
 				24A1718114742C4A005028F4 /* Supporting Files */,
 			);
 			path = FieldGoalCharting;

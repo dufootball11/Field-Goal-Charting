@@ -16,13 +16,11 @@
 #import "EnterDataNotesViewController.h"
 #import "ViewStatsViewController.h"
 
-#import "SetFieldViewDataDelegate.h"
-
 #import "Chart.h"
 
 @class SegmentsController;
 
-@interface EnterDataChartViewController : UIViewController <SetFieldViewDataDelegate> {
+@interface EnterDataChartViewController : UIViewController {
 
     SegmentsController *segmentsController;
     IBOutlet UIBarButtonItem *SaveButton;
