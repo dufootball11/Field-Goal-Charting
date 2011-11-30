@@ -185,6 +185,13 @@
     viewStatsVC._56RightMake = enterData56PlusVC.RightMade_56Plus;
     viewStatsVC._56RightMiss = enterData56PlusVC.Right_56PlusMiss;
     
+    ////////////
+    viewStatsVC.titleString = enterDataNotesVC.titleStringTextField.text;
+    viewStatsVC.locationString = enterDataNotesVC.locationTextField.text;
+    viewStatsVC.weatherString = enterDataNotesVC.weatherTextField.text;
+    viewStatsVC.windString = enterDataNotesVC.windTextField.text;
+    viewStatsVC.notesString = enterDataNotesVC.notesTextView.text;
+    
     [self presentModalViewController:viewStatsVC animated:YES];
 }
 

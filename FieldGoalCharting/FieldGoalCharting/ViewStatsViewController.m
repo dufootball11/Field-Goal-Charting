@@ -31,6 +31,7 @@
 @synthesize _56LeftMake, _56LeftMiss, _56MiddleMake, _56MiddleMiss, _56RightMake, _56RightMiss;
 
 @synthesize delegate, greenViewColor;
+@synthesize titleString, locationString, weatherString, windString, notesString;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -161,6 +162,77 @@
     self.fieldViewStatsVC._56MiddleMiss = _56MiddleMiss;
     self.fieldViewStatsVC._56RightMake = _56RightMake;
     self.fieldViewStatsVC._56RightMiss = _56RightMiss;
+    
+    /////////
+    self.chartViewStatsVC._20LeftMake = _20LeftMake;
+    self.chartViewStatsVC._20LeftMiss = _20LeftMiss;
+    self.chartViewStatsVC._20MiddleMake = _20MiddleMake;
+    self.chartViewStatsVC._20MiddleMiss = _20MiddleMiss;
+    self.chartViewStatsVC._20RightMake = _20RightMake;
+    self.chartViewStatsVC._20RightMiss = _20RightMiss;
+    
+    self.chartViewStatsVC._25LeftMake = _25LeftMake;
+    self.chartViewStatsVC._25LeftMiss = _25LeftMiss;
+    self.chartViewStatsVC._25MiddleMake = _25MiddleMake;
+    self.chartViewStatsVC._25MiddleMiss = _25MiddleMiss;
+    self.chartViewStatsVC._25RightMake = _25RightMake;
+    self.chartViewStatsVC._25RightMiss = _25RightMiss;
+    
+    self.chartViewStatsVC._30LeftMake = _30LeftMake;
+    self.chartViewStatsVC._30LeftMiss = _30LeftMiss;
+    self.chartViewStatsVC._30MiddleMake = _30MiddleMake;
+    self.chartViewStatsVC._30MiddleMiss = _30MiddleMiss;
+    self.chartViewStatsVC._30RightMake = _30RightMake;
+    self.chartViewStatsVC._30RightMiss = _30RightMiss;
+    
+    self.chartViewStatsVC._35LeftMake = _35LeftMake;
+    self.chartViewStatsVC._35LeftMiss = _35LeftMiss;
+    self.chartViewStatsVC._35MiddleMake = _35MiddleMake;
+    self.chartViewStatsVC._35MiddleMiss = _35MiddleMiss;
+    self.chartViewStatsVC._35RightMake = _35RightMake;
+    self.chartViewStatsVC._35RightMiss = _35RightMiss;
+    
+    self.chartViewStatsVC._40LeftMake = _40LeftMake;
+    self.chartViewStatsVC._40LeftMiss = _40LeftMiss;
+    self.chartViewStatsVC._40MiddleMake = _40MiddleMake;
+    self.chartViewStatsVC._40MiddleMiss = _40MiddleMiss;
+    self.chartViewStatsVC._40RightMake = _40RightMake;
+    self.chartViewStatsVC._40RightMiss = _40RightMiss;
+    
+    self.chartViewStatsVC._45LeftMake = _45LeftMake;
+    self.chartViewStatsVC._45LeftMiss = _45LeftMiss;
+    self.chartViewStatsVC._45MiddleMake = _45MiddleMake;
+    self.chartViewStatsVC._45MiddleMiss = _45MiddleMiss;
+    self.chartViewStatsVC._45RightMake = _45RightMake;
+    self.chartViewStatsVC._45RightMiss = _45RightMiss;
+    
+    self.chartViewStatsVC._50LeftMake = _50LeftMake;
+    self.chartViewStatsVC._50LeftMiss = _50LeftMiss;
+    self.chartViewStatsVC._50MiddleMake = _50MiddleMake;
+    self.chartViewStatsVC._50MiddleMiss = _50MiddleMiss;
+    self.chartViewStatsVC._50RightMake = _50RightMake;
+    self.chartViewStatsVC._50RightMiss = _50RightMiss;
+    
+    self.chartViewStatsVC._55LeftMake = _55LeftMake;
+    self.chartViewStatsVC._55LeftMiss = _55LeftMiss;
+    self.chartViewStatsVC._55MiddleMake = _55MiddleMake;
+    self.chartViewStatsVC._55MiddleMiss = _55MiddleMiss;
+    self.chartViewStatsVC._55RightMake = _55RightMake;
+    self.chartViewStatsVC._55RightMiss = _55RightMiss;
+    
+    self.chartViewStatsVC._56LeftMake = _56LeftMake;
+    self.chartViewStatsVC._56LeftMiss = _56LeftMiss;
+    self.chartViewStatsVC._56MiddleMake = _56MiddleMake;
+    self.chartViewStatsVC._56MiddleMiss = _56MiddleMiss;
+    self.chartViewStatsVC._56RightMake = _56RightMake;
+    self.chartViewStatsVC._56RightMiss = _56RightMiss;
+    
+    ///////
+    self.notesViewStatsVC.titleTextFieldString = titleString;
+    self.notesViewStatsVC.locationTextFieldString = locationString;
+    self.notesViewStatsVC.weatherTextFieldString = weatherString;
+    self.notesViewStatsVC.windTextFieldString = windString;
+    self.notesViewStatsVC.notesTextViewString = notesString;
     
     NSArray * viewControllers = [NSArray arrayWithObjects:chartViewStatsVC, fieldViewStatsVC, notesViewStatsVC, nil];
     

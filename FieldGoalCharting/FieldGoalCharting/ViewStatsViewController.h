@@ -27,7 +27,11 @@
 
 @property (retain) id delegate;
 @property (nonatomic, retain) UIColor *greenViewColor;
-
+@property (nonatomic, copy) NSString *titleString;
+@property (nonatomic, copy) NSString *weatherString;
+@property (nonatomic, copy) NSString *windString;
+@property (nonatomic, copy) NSString *locationString;
+@property (nonatomic, copy) NSString *notesString;
 
 @property (nonatomic, retain) SegmentsController *segmentsController;
 @property (nonatomic, retain) UISegmentedControl *viewSegmentedControl;

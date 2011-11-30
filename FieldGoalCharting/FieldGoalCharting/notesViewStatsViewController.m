@@ -10,6 +10,10 @@
 
 @implementation notesViewStatsViewController
 
+@synthesize titleTextField, weatherTextField, windTextField, locationTextField, notesTextView;
+@synthesize titleTextFieldString, weatherTextFieldString, windTextFieldString, locationTextFieldString, notesTextViewString;
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -34,10 +38,25 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    titleTextField.text = titleTextFieldString;
+    weatherTextField.text = weatherTextFieldString;
+    windTextField.text = windTextFieldString;
+    locationTextField.text = locationTextFieldString;
+    notesTextView.text = notesTextViewString;
 }
 
 - (void)viewDidUnload
 {
+    [self setTitleTextField:nil];
+    [locationTextField release];
+    locationTextField = nil;
+    [weatherTextField release];
+    weatherTextField = nil;
+    [windTextField release];
+    windTextField = nil;
+    [notesTextView release];
+    notesTextView = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -49,4 +68,12 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)dealloc {
+    [titleTextField release];
+    [locationTextField release];
+    [weatherTextField release];
+    [windTextField release];
+    [notesTextView release];
+    [super dealloc];
+}
 @end

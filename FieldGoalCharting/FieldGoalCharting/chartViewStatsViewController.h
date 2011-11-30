@@ -10,7 +10,64 @@
 
 @interface chartViewStatsViewController : UIViewController {
     
+    IBOutlet UILabel *_20LeftLabel;
+    IBOutlet UILabel *_20MiddleLabel;
+    IBOutlet UILabel *_20RightLabel;
+    IBOutlet UILabel *_25LeftLabel;
+    IBOutlet UILabel *_25MiddleLabel;
+    IBOutlet UILabel *_25RightLabel;
+    IBOutlet UILabel *_30LeftLabel;
+    IBOutlet UILabel *_30MiddleLabel;
+    IBOutlet UILabel *_30RightLabel;
+    IBOutlet UILabel *_35LeftLabel;
+    IBOutlet UILabel *_35MiddleLabel;
+    IBOutlet UILabel *_35RightLabel;
+    IBOutlet UILabel *_40LeftLabel;
+    IBOutlet UILabel *_40MiddleLabel;
+    IBOutlet UILabel *_40RightLabel;
+    IBOutlet UILabel *_45LeftLabel;
+    IBOutlet UILabel *_45MiddleLabel;
+    IBOutlet UILabel *_45RightLabel;
+    IBOutlet UILabel *_50LeftLabel;
+    IBOutlet UILabel *_50MiddleLabel;
+    IBOutlet UILabel *_50RightLabel;
+    IBOutlet UILabel *_55LeftLabel;
+    IBOutlet UILabel *_55MiddleLabel;
+    IBOutlet UILabel *_55RightLabel;
+    IBOutlet UILabel *_56LeftLabel;
+    IBOutlet UILabel *_56MiddleLabel;
+    IBOutlet UILabel *_56RightLabel;
 }
+
+@property (nonatomic, retain) UILabel *_20LeftLabel;
+@property (nonatomic, retain) UILabel *_20MiddleLabel;
+@property (nonatomic, retain) UILabel *_20RightLabel;
+@property (nonatomic, retain) UILabel *_25LeftLabel;
+@property (nonatomic, retain) UILabel *_25MiddleLabel;
+@property (nonatomic, retain) UILabel *_25RightLabel;
+@property (nonatomic, retain) UILabel *_30LeftLabel;
+@property (nonatomic, retain) UILabel *_30MiddleLabel;
+@property (nonatomic, retain) UILabel *_30RightLabel;
+@property (nonatomic, retain) UILabel *_35LeftLabel;
+@property (nonatomic, retain) UILabel *_35MiddleLabel;
+@property (nonatomic, retain) UILabel *_35RightLabel;
+@property (nonatomic, retain) UILabel *_40LeftLabel;
+@property (nonatomic, retain) UILabel *_40MiddleLabel;
+@property (nonatomic, retain) UILabel *_40RightLabel;
+@property (nonatomic, retain) UILabel *_45LeftLabel;
+@property (nonatomic, retain) UILabel *_45MiddleLabel;
+@property (nonatomic, retain) UILabel *_45RightLabel;
+@property (nonatomic, retain) UILabel *_50LeftLabel;
+@property (nonatomic, retain) UILabel *_50MiddleLabel;
+@property (nonatomic, retain) UILabel *_50RightLabel;
+@property (nonatomic, retain) UILabel *_55LeftLabel;
+@property (nonatomic, retain) UILabel *_55MiddleLabel;
+@property (nonatomic, retain) UILabel *_55RightLabel;
+@property (nonatomic, retain) UILabel *_56LeftLabel;
+@property (nonatomic, retain) UILabel *_56MiddleLabel;
+@property (nonatomic, retain) UILabel *_56RightLabel;
+
+
 
 @property (nonatomic, assign) double _20LeftMiss;
 @property (nonatomic, assign) double _20LeftMake;
