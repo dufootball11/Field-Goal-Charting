@@ -20,8 +20,13 @@
     IBOutlet UIView *currentStatView;
     double _20LeftMiss;
     double _20LeftMake;
+    IBOutlet UIBarButtonItem *doneButton;
 }
 
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
+@property (nonatomic, retain) UIBarButtonItem *doneButton;
+@property (nonatomic, assign) BOOL fromViewStatsVC;
 @property (nonatomic, retain) UIColor *greenViewColor;
 @property (nonatomic, copy) NSString *titleString;
 @property (nonatomic, copy) NSString *weatherString;

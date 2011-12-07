@@ -20,7 +20,7 @@
 @synthesize DistanceSegmentedControl, CurrentDistanceChartView, segmentsController;
 @synthesize chartArray, enterDataNotesVC, navigationController;
 @synthesize enterData18_25VC, enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC;
-@synthesize viewStatsVC, greenViewColor;
+@synthesize viewStatsVC, greenViewColor, managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -43,8 +43,6 @@
 
 - (void)viewDidLoad
 {
-    greenViewColor = [[UIColor alloc] initWithRed:0 green:192 blue:69 alpha:1.0];
-
     CurrentDistanceChartView.clipsToBounds = YES;
     // Do any additional setup after loading the view from its nib.
     
@@ -93,17 +91,79 @@
 
 - (IBAction)Save:(id)sender {
     
-    /*Chart *chart = (Chart *)[NSEntityDescription insertNewObjectForEntityForName:@"Chart" inManagedObjectContext:self.managedObjectContext];  
+    Chart *chart = (Chart *)[NSEntityDescription insertNewObjectForEntityForName:@"Chart" inManagedObjectContext:self.managedObjectContext];  
     
     [chart setDate: [NSDate date]];
-    [chart setLeft18_20Make: (NSNumber *) enterData18_25VC.LeftMade18_20];
-    [chart setLeft18_20Miss: (NSNumber *) enterData18_25VC.Left18_20Miss];
-    [chart setMiddle18_20Make: (NSNumber *) enterData18_25VC.MiddleMade18_20];
-    [chart setMiddle18_20Miss: (NSNumber *) enterData18_25VC.Middle18_20Miss];
-    [chart setRight18_20Make: (NSNumber *) enterData18_25VC.RightMade18_20];
-    [chart setRight18_20Miss: (NSNumber *) enterData18_25VC.Right18_20Miss];
+    [chart setLeft18_20Make: [NSNumber numberWithDouble: enterData18_25VC.LeftMade18_20]];
+    [chart setLeft18_20Miss: [NSNumber numberWithDouble: enterData18_25VC.Left18_20Miss]];
+    [chart setMiddle18_20Make: [NSNumber numberWithDouble: enterData18_25VC.MiddleMade18_20]];
+    [chart setMiddle18_20Miss: [NSNumber numberWithDouble: enterData18_25VC.Middle18_20Miss]];
+    [chart setRight18_20Make: [NSNumber numberWithDouble: enterData18_25VC.RightMade18_20]];
+    [chart setRight18_20Miss: [NSNumber numberWithDouble: enterData18_25VC.Right18_20Miss]];
+    
+    [chart setLeft21_25Make: [NSNumber numberWithDouble: enterData18_25VC.LeftMade21_25]];
+    [chart setLeft21_25Miss: [NSNumber numberWithDouble: enterData18_25VC.Left21_25Miss]];
+    [chart setMiddle21_25Make: [NSNumber numberWithDouble: enterData18_25VC.MiddleMade21_25]];
+    [chart setMiddle21_25Miss: [NSNumber numberWithDouble: enterData18_25VC.Middle21_25Miss]];
+    [chart setRight21_25Make: [NSNumber numberWithDouble: enterData18_25VC.RightMade21_25]];
+    [chart setRight21_25Miss: [NSNumber numberWithDouble: enterData18_25VC.Right21_25Miss]];
+    
+    [chart setLeft26_30Make: [NSNumber numberWithDouble: enterData26_35VC.LeftMade26_30]];
+    [chart setLeft26_30Miss: [NSNumber numberWithDouble: enterData26_35VC.Left26_30Miss]];
+    [chart setMiddle26_30Make: [NSNumber numberWithDouble: enterData26_35VC.MiddleMade26_30]];
+    [chart setMiddle26_30Miss: [NSNumber numberWithDouble: enterData26_35VC.Middle26_30Miss]];
+    [chart setRight26_30Make: [NSNumber numberWithDouble: enterData26_35VC.RightMade26_30]];
+    [chart setRight26_30Miss: [NSNumber numberWithDouble: enterData26_35VC.Right26_30Miss]];
+    
+    [chart setLeft31_35Make: [NSNumber numberWithDouble: enterData26_35VC.LeftMade31_35]];
+    [chart setLeft31_35Miss: [NSNumber numberWithDouble: enterData26_35VC.Left31_35Miss]];
+    [chart setMiddle31_35Make: [NSNumber numberWithDouble: enterData26_35VC.MiddleMade31_35]];
+    [chart setMiddle31_35Miss: [NSNumber numberWithDouble: enterData26_35VC.Middle31_35Miss]];
+    [chart setRight31_35Make: [NSNumber numberWithDouble: enterData26_35VC.RightMade31_35]];
+    [chart setRight31_35Miss: [NSNumber numberWithDouble: enterData26_35VC.Right31_35Miss]];
+    
+    [chart setLeft36_40Make: [NSNumber numberWithDouble: enterData36_45VC.LeftMade36_40]];
+    [chart setLeft36_40Miss: [NSNumber numberWithDouble: enterData36_45VC.Left36_40Miss]];
+    [chart setMiddle36_40Make: [NSNumber numberWithDouble: enterData36_45VC.MiddleMade36_40]];
+    [chart setMiddle36_40Miss: [NSNumber numberWithDouble: enterData36_45VC.Middle36_40Miss]];
+    [chart setRight36_40Make: [NSNumber numberWithDouble: enterData36_45VC.RightMade36_40]];
+    [chart setRight36_40Miss: [NSNumber numberWithDouble: enterData36_45VC.Right36_40Miss]];
+    
+    [chart setLeft41_45Make: [NSNumber numberWithDouble: enterData36_45VC.LeftMade41_45]];
+    [chart setLeft41_45Miss: [NSNumber numberWithDouble: enterData36_45VC.Left41_45Miss]];
+    [chart setMiddle41_45Make: [NSNumber numberWithDouble: enterData36_45VC.MiddleMade41_45]];
+    [chart setMiddle41_45Miss: [NSNumber numberWithDouble: enterData36_45VC.Middle41_45Miss]];
+    [chart setRight41_45Make: [NSNumber numberWithDouble: enterData36_45VC.RightMade41_45]];
+    [chart setRight41_45Miss: [NSNumber numberWithDouble: enterData36_45VC.Right41_45Miss]];
+    
+    [chart setLeft46_50Make: [NSNumber numberWithDouble: enterData46_55VC.LeftMade46_50]];
+    [chart setLeft46_50Miss: [NSNumber numberWithDouble: enterData46_55VC.Left46_50Miss]];
+    [chart setMiddle46_50Make: [NSNumber numberWithDouble: enterData46_55VC.MiddleMade46_50]];
+    [chart setMiddle46_50Miss: [NSNumber numberWithDouble: enterData46_55VC.Middle46_50Miss]];
+    [chart setRight46_50Make: [NSNumber numberWithDouble: enterData46_55VC.RightMade46_50]];
+    [chart setRight46_50Miss: [NSNumber numberWithDouble: enterData46_55VC.Right46_50Miss]];
+    
+    [chart setLeft51_55Make: [NSNumber numberWithDouble: enterData46_55VC.LeftMade51_55]];
+    [chart setLeft51_55Miss: [NSNumber numberWithDouble: enterData46_55VC.Left51_55Miss]];
+    [chart setMiddle51_55Make: [NSNumber numberWithDouble: enterData46_55VC.MiddleMade51_55]];
+    [chart setMiddle51_55Miss: [NSNumber numberWithDouble: enterData46_55VC.Middle51_55Miss]];
+    [chart setRight51_55Make: [NSNumber numberWithDouble: enterData46_55VC.RightMade51_55]];
+    [chart setRight51_55Miss: [NSNumber numberWithDouble: enterData46_55VC.Right51_55Miss]];
+    
+    [chart setLeft56PlusMake: [NSNumber numberWithDouble: enterData56PlusVC.LeftMade_56Plus]];
+    [chart setLeft56PlusMiss: [NSNumber numberWithDouble: enterData56PlusVC.Left_56PlusMiss]];
+    [chart setMiddle56PlusMake: [NSNumber numberWithDouble: enterData56PlusVC.MiddleMade_56Plus]];
+    [chart setMiddle56PlusMiss: [NSNumber numberWithDouble: enterData56PlusVC.Middle_56PlusMiss]];
+    [chart setRight56PlusMake: [NSNumber numberWithDouble: enterData56PlusVC.RightMade_56Plus]];
+    [chart setRight56PlusMiss: [NSNumber numberWithDouble: enterData56PlusVC.Right_56PlusMiss]];
     
     [chart setTitle:[enterDataNotesVC.titleStringTextField text]];
+    [chart setWeather:[enterDataNotesVC.weatherTextField text]];
+    [chart setWind:[enterDataNotesVC.windTextField text]];
+    [chart setLocation:[enterDataNotesVC.locationTextField text]];
+    [chart setNotes:[enterDataNotesVC.notesTextView text]];
+
+    
     
     NSError *error;  
     
@@ -117,9 +177,9 @@
     
     
     [chartArray insertObject:chart atIndex:0];     
-    */
     
     viewStatsVC = [[ViewStatsViewController alloc] init];
+    viewStatsVC.fromViewStatsVC = NO;
     
     viewStatsVC._20LeftMake = enterData18_25VC.LeftMade18_20;
     viewStatsVC._20LeftMiss = enterData18_25VC.Left18_20Miss;

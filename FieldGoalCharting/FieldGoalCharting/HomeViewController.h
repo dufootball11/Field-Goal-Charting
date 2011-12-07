@@ -13,6 +13,7 @@
     IBOutlet UIButton *ViewStatsButton;
 }
 
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 @property (nonatomic, retain) IBOutlet UIButton *EnterStatsButton;
 @property (nonatomic, retain) IBOutlet UIButton *ViewStatsButton;
 

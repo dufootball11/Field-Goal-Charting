@@ -19,6 +19,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     HomeViewController *HomeVC = [[HomeViewController alloc] init];
+    HomeVC.managedObjectContext = self.managedObjectContext;
+    
     self.window.rootViewController = HomeVC;
     
     // Override point for customization after application launch.

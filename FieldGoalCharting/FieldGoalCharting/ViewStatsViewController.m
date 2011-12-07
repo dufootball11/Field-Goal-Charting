@@ -30,8 +30,8 @@
 @synthesize _55LeftMake, _55LeftMiss, _55MiddleMake, _55MiddleMiss, _55RightMake, _55RightMiss;
 @synthesize _56LeftMake, _56LeftMiss, _56MiddleMake, _56MiddleMiss, _56RightMake, _56RightMiss;
 
-@synthesize greenViewColor;
-@synthesize titleString, locationString, weatherString, windString, notesString;
+@synthesize greenViewColor, managedObjectContext;
+@synthesize titleString, locationString, weatherString, windString, notesString,fromViewStatsVC, doneButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -57,6 +57,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     greenViewColor = [[UIColor alloc] initWithRed:0 green:192 blue:69 alpha:1.0];
+    
+    if (fromViewStatsVC) {
+        self.doneButton.title = @"Charts";
+    }
+    
+    else {
+        self.doneButton.title = @"Done";
+    }
+
 
     currentStatView.clipsToBounds = YES;
     // Do any additional setup after loading the view from its nib.
@@ -83,6 +92,8 @@
 {
     [currentStatView release];
     currentStatView = nil;
+    [doneButton release];
+    doneButton = nil;
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -246,12 +257,19 @@
 
 - (void)dealloc {
     [currentStatView release];
+    [doneButton release];
     [super dealloc];
 }
 
 - (IBAction)doneWithViews:(id)sender {
-    [self.parentViewController.parentViewController dismissModalViewControllerAnimated:YES];
-    [self dismissModalViewControllerAnimated:YES];
+    if (fromViewStatsVC) {
+        [self dismissModalViewControllerAnimated:YES];
+    }
+    
+    else {
+        [self.parentViewController.parentViewController dismissModalViewControllerAnimated:YES];
+        [self dismissModalViewControllerAnimated:YES];
+    }
 }
 
 @end

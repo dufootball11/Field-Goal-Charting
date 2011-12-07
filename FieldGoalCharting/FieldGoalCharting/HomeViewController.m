@@ -8,9 +8,10 @@
 
 #import "HomeViewController.h"
 #import "EnterDataChartViewController.h"
+#import "ViewStatsTableViewController.h"
 
 @implementation HomeViewController
-@synthesize EnterStatsButton, ViewStatsButton;
+@synthesize EnterStatsButton, ViewStatsButton, managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -35,6 +36,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    if (self.managedObjectContext == nil) {
+        
+    }
 }
 
 - (void)viewDidUnload
@@ -60,10 +64,15 @@
 }
 - (IBAction)EnterStats:(id)sender {
     EnterDataChartViewController *enterDataChartVC = [[EnterDataChartViewController alloc] init];
-    //[self.view addSubview:enterDataChartVC.view];
+    enterDataChartVC.managedObjectContext = self.managedObjectContext;
     [self presentModalViewController:enterDataChartVC animated:NO];
 }
 
 - (IBAction)ViewStats:(id)sender {
+    ViewStatsTableViewController *viewStatsTableVC = [[ViewStatsTableViewController alloc] init];
+    viewStatsTableVC.managedObjectContext = self.managedObjectContext;
+    viewStatsTableVC.title = @"Charts";
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewStatsTableVC];
+    [self presentModalViewController:navigationController animated:NO];
 }
 @end

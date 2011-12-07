@@ -34,7 +34,9 @@
 
 @property (nonatomic, retain) UIColor *greenViewColor;
  
-@property (nonatomic, retain) NSMutableArray *chartArray;   
+@property (nonatomic, retain) NSMutableArray *chartArray;
+@property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
+
 
 @property (nonatomic, retain) SegmentsController     * segmentsController;
 @property (nonatomic, retain) UISegmentedControl *DistanceSegmentedControl;
