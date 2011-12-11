@@ -1,14 +1,16 @@
-//
-//  EnterData18_25ChartViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/21/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: EnterData18_25ChartViewController.m
 
+//  description: implementation of the enterdata18_25chartviewcontroller class
+
+//import necessary libraries
 #import "EnterData18_25ChartViewController.h"
 
 @implementation EnterData18_25ChartViewController
+
+//synthesize all variables
 
 //18-20 yards
 @synthesize String18_20Left, LeftMade18_20, String18_20Middle, MiddleMade18_20, String18_20Right, RightMade18_20;
@@ -70,6 +72,8 @@
     // Return YES for supported orientations
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
+
+//for the corresponding distance and direction, if the user presses the decrease button, decrement the total for that variable by one. if the user presses the increase button, increment the total for that variable by one
 
 //18-20 yards
 - (IBAction)_20LeftMakeDecrease:(id)sender {

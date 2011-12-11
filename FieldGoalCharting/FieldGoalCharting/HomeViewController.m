@@ -1,16 +1,18 @@
-//
-//  HomeViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/16/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: HomeViewController.m
 
+//  description: Implementation of the HomeViewController class
+
+//import necessary header files
 #import "HomeViewController.h"
 #import "EnterDataChartViewController.h"
 #import "ViewStatsTableViewController.h"
 
 @implementation HomeViewController
+
+//synthesize properties
 @synthesize EnterStatsButton, ViewStatsButton, managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -36,9 +38,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    if (self.managedObjectContext == nil) {
-        
-    }
 }
 
 - (void)viewDidUnload
@@ -57,17 +56,21 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+//release variables
 - (void)dealloc {
     [EnterStatsButton release];
     [ViewStatsButton release];
     [super dealloc];
 }
+
+//EnterStats method.  initializes an instance of enterdatachartviewcontroller and passes the managed object context and modally presents it
 - (IBAction)EnterStats:(id)sender {
     EnterDataChartViewController *enterDataChartVC = [[EnterDataChartViewController alloc] init];
     enterDataChartVC.managedObjectContext = self.managedObjectContext;
     [self presentModalViewController:enterDataChartVC animated:NO];
 }
 
+//ViewStats method.  initializes an instance of viewstatstableviewcontroller and passes the managed object context and modally presents it
 - (IBAction)ViewStats:(id)sender {
     ViewStatsTableViewController *viewStatsTableVC = [[ViewStatsTableViewController alloc] init];
     viewStatsTableVC.managedObjectContext = self.managedObjectContext;

@@ -1,10 +1,9 @@
-//
-//  EnterData46_50ViewController.h
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/21/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: EnterData46_55ChartViewController.m
+
+//  description: header file for the enterdata46_55chartviewcontroller class.  lets the user enter makes and misses for differing directions from 46 yards to 55 yards
 
 #import <UIKit/UIKit.h>
 

@@ -1,10 +1,9 @@
-//
-//  EnterData18_25ChartViewController.h
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/21/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: EnterData18_25ChartViewController.m
+
+//  description: header file for the enterdata18_25chartviewcontroller class.  lets the user enter makes and misses for differing directions from 18 yards to 25 yards
 
 #import <UIKit/UIKit.h>
 

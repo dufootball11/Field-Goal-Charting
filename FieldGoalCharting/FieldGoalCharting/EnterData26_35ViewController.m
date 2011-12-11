@@ -1,20 +1,19 @@
-//
-//  EnterData26_35ViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/21/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: EnterData26_35ChartViewController.m
+
+//  description: implementation of the enterdata26_35viewcontroller class
 
 #import "EnterData26_35ViewController.h"
 
 @implementation EnterData26_35ViewController
 
-//18-20 yards
+//26-30 yards
 @synthesize String26_30Left, LeftMade26_30, String26_30Middle, MiddleMade26_30, String26_30Right, RightMade26_30;
 @synthesize String26_30LeftMiss, Left26_30Miss, String26_30MiddleMiss, Middle26_30Miss, String26_30RightMiss, Right26_30Miss;
 
-//21-25 yards
+//31-35 yards
 @synthesize String31_35Left, LeftMade31_35, String31_35Middle, MiddleMade31_35, String31_35Right, RightMade31_35;
 @synthesize String31_35LeftMiss, Left31_35Miss, String31_35MiddleMiss, Middle31_35Miss, String31_35RightMiss, Right31_35Miss;
 
@@ -56,6 +55,8 @@
     Right31_35Miss = 0;
     Middle31_35Miss = 0;
 }
+
+//for the corresponding distance and direction, if the user presses the decrease button, decrement the total for that variable by one. if the user presses the increase button, increment the total for that variable by one
 
 //18-20 yards
 - (IBAction)_30LeftMakeDecrease:(id)sender {

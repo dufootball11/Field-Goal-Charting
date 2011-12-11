@@ -6,6 +6,8 @@
 //  Copyright 2010 Red Artisan. All rights reserved.
 //
 
+//  Code take from Marcus Crafter to implement segments controller
+
 #import <Foundation/Foundation.h>
 
 

@@ -1,15 +1,16 @@
-//
-//  ViewStatsViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/27/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: ViewStatsViewController.m
 
+//  description: implementation of the viewstatsviewcontroller class
+
+//import necessary header files
 #import "ViewStatsViewController.h"
 #import "SegmentsController.h"
 #import "NSArray+PerformSelector.h"
 
+//declare the interface for the segmentcontrollers class
 @interface ViewStatsViewController ()
 - (NSArray *)segmentViewControllers;
 - (void)firstUserExperience;
@@ -18,6 +19,7 @@
 
 @implementation ViewStatsViewController
 
+//synthesize the properties
 @synthesize segmentsController, viewSegmentedControl, navigationController, currentStatView;
 @synthesize chartViewStatsVC, fieldViewStatsVC, notesViewStatsVC;
 @synthesize _20LeftMake, _20LeftMiss, _20MiddleMake, _20MiddleMiss, _20RightMake, _20RightMiss;
@@ -58,6 +60,7 @@
     // Do any additional setup after loading the view from its nib.
     greenViewColor = [[UIColor alloc] initWithRed:0 green:192 blue:69 alpha:1.0];
     
+    //decide which view controller pushed this view, and set the title
     if (fromViewStatsVC) {
         self.doneButton.title = @"Charts";
     }
@@ -70,24 +73,29 @@
     currentStatView.clipsToBounds = YES;
     // Do any additional setup after loading the view from its nib.
     
+    //initialize the view controllers array to the segmentviewcontrollers array
     NSArray * viewControllers = [self segmentViewControllers];
     
+    //set the nav controller to the various views of the view controllers
     navigationController = [[[UINavigationController alloc] init] autorelease];
     
     self.segmentsController = [[SegmentsController alloc] initWithNavigationController:navigationController viewControllers:viewControllers];
     self.viewSegmentedControl = [[UISegmentedControl alloc] initWithItems:[viewControllers arrayByPerformingSelector:@selector(title)]];
     self.viewSegmentedControl.segmentedControlStyle = UISegmentedControlStyleBar;
     
-    
+    //change views on a change of the segmented controller
     [self.viewSegmentedControl addTarget:self.segmentsController
                                       action:@selector(indexDidChangeForSegmentedControl:)
                             forControlEvents:UIControlEventValueChanged];
     
+    //call firstUserExperience
     [self firstUserExperience];
     
+    //set the current view
     [currentStatView addSubview:navigationController.view];
 }
 
+//release all variables
 - (void)viewDidUnload
 {
     [currentStatView release];
@@ -95,8 +103,6 @@
     [doneButton release];
     doneButton = nil;
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -105,12 +111,14 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+//segment view controllers array. 
 - (NSArray *)segmentViewControllers {
-    
+    //initialize the view controllers with their respective nibs for the the segmented controller
     chartViewStatsVC = [[chartViewStatsViewController alloc] initWithNibName:@"chartViewStatsViewController" bundle:nil];
     fieldViewStatsVC = [[fieldViewStatsViewController alloc] initWithNibName:@"fieldViewStatsViewController" bundle:nil];
     notesViewStatsVC = [[notesViewStatsViewController alloc] initWithNibName:@"notesViewStatsViewController" bundle:nil];
     
+    //set the various make and miss variables to the user's entries
     self.fieldViewStatsVC._20LeftMake = _20LeftMake;
     self.fieldViewStatsVC._20LeftMiss = _20LeftMiss;
     self.fieldViewStatsVC._20MiddleMake = _20MiddleMake;
@@ -245,11 +253,13 @@
     self.notesViewStatsVC.windTextFieldString = windString;
     self.notesViewStatsVC.notesTextViewString = notesString;
     
+    //add the view controllers to the array and return the array
     NSArray * viewControllers = [NSArray arrayWithObjects:chartViewStatsVC, fieldViewStatsVC, notesViewStatsVC, nil];
     
     return viewControllers;
 }
 
+//set the segmented control to the first view/segment
 - (void)firstUserExperience {
     self.viewSegmentedControl.selectedSegmentIndex = 0;
     [self.segmentsController indexDidChangeForSegmentedControl:self.viewSegmentedControl];
@@ -261,6 +271,7 @@
     [super dealloc];
 }
 
+//release the view controller and push back to the proper parent controller
 - (IBAction)doneWithViews:(id)sender {
     if (fromViewStatsVC) {
         [self dismissModalViewControllerAnimated:YES];

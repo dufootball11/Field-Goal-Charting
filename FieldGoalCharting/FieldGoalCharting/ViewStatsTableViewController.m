@@ -1,17 +1,18 @@
-//
-//  ViewStatsTableViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/28/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: ViewStatsTableViewController.m
 
+//  description: implementation of the viewstatstableviewcontroller class
+
+//import necessary header files
 #import "ViewStatsTableViewController.h"
 #import "ViewStatsViewController.h"
 #import "Chart.h"
 
 @implementation ViewStatsTableViewController
 
+//synthesize properties
 @synthesize managedObjectContext, chartArray, viewStatsVC;
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -37,22 +38,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-        
+    
+    //create a bar button that allows the user to return to the home screen    
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStyleDone target:self action:@selector(done)]; 
     self.navigationItem.leftBarButtonItem = backButton;
 
-    
-    
+    //create an fetch request for chart entities
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"Chart" inManagedObjectContext:self.managedObjectContext];   
     NSFetchRequest *request = [[NSFetchRequest alloc] init];   
     [request setEntity:entity];  
     
+    //sort the entities in desending order by their date attribute
     NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"date" ascending:NO];   
     NSArray *sortDescriptors = [NSArray arrayWithObject:sortDescriptor];   
     [request setSortDescriptors:sortDescriptors];   
@@ -130,6 +126,7 @@
     static NSString *CellIdentifier = @"Cell";
     static NSDateFormatter *dateFormatter = nil;   
     
+    //format the dates as we want to see them in the cells
     if (dateFormatter == nil) {  
         dateFormatter = [[NSDateFormatter alloc] init];  
         [dateFormatter setDateFormat:@"MMMM dd, yyyy hh:mm a"];  
@@ -140,6 +137,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
+    //fill the rows with the chart objects and set the text to the date
     Chart *chart = [chartArray objectAtIndex: [indexPath row]];
     [cell.textLabel setText: [dateFormatter stringFromDate: [chart date]]];
     
@@ -187,6 +185,7 @@
 
 #pragma mark - Table view delegate
 
+//if the user selects a row, create a chart object from the chart that was selected and set all the new view controller's properties to those of the selected chart
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Chart *chart = [chartArray objectAtIndex: [indexPath row]];
@@ -262,6 +261,7 @@
     viewStatsVC.windString = chart.wind;
     viewStatsVC.notesString = chart.notes;
     
+    //present the view controller modally
     [self presentModalViewController:viewStatsVC animated:YES];
 
 }

@@ -1,16 +1,17 @@
-//
-//  FieldGoalChartingAppDelegate.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/16/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: FieldGoalChartingAppDelegate.m
 
+//  description: implementation of the fieldgoalchartingappdelegate class
+
+//import necessary files
 #import "FieldGoalChartingAppDelegate.h"
 #import "HomeViewController.h"
 
 @implementation FieldGoalChartingAppDelegate
 
+//synthesize properties
 @synthesize window = _window;
 @synthesize managedObjectContext = __managedObjectContext;
 @synthesize managedObjectModel = __managedObjectModel;
@@ -18,12 +19,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    //create the home screen and pass the managed object context
     HomeViewController *HomeVC = [[HomeViewController alloc] init];
     HomeVC.managedObjectContext = self.managedObjectContext;
     
     self.window.rootViewController = HomeVC;
-    
-    // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
     
     [HomeVC release];

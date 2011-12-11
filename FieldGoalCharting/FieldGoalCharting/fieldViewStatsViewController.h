@@ -1,15 +1,14 @@
-//
-//  fieldViewStatsViewController.h
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/27/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: fieldViewStatsViewController.m
+
+//  description: the header file for the field view of the stats view.  displays a "hot zone" grid with a gradient of a green color applied to the percentage of the kicks made from that distance and direction, going from bright green at 100% to white at 0%
 
 #import <UIKit/UIKit.h>
 
 @interface fieldViewStatsViewController : UIViewController {
-    
+    //declare outlets for the individual color views
     IBOutlet UIView *_20LeftView;
     IBOutlet UIView *_20MiddleView;
     IBOutlet UIView *_20RightView;
@@ -38,6 +37,7 @@
     IBOutlet UIView *_56MiddleView;
     IBOutlet UIView *_56RightView;
     
+    //declare outlets for the label percentages
     IBOutlet UILabel *_20LeftLabel;
     IBOutlet UILabel *_20MiddleLabel;
     IBOutlet UILabel *_20RightLabel;
@@ -68,6 +68,7 @@
     
 }
 
+//declare all properties
 @property (nonatomic, retain) UIColor *greenViewColor;
 @property (nonatomic, assign) double _20LeftMiss;
 @property (nonatomic, assign) double _20LeftMake;

@@ -1,15 +1,16 @@
-//
-//  fieldViewStatsViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/27/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: fieldViewStatsViewController.m
 
+//  description: implementation of the fieldviewstatsviewcontroller class
+
+//import necessary header files
 #import "fieldViewStatsViewController.h"
 
 @implementation fieldViewStatsViewController
 
+//synthesize all variables
 @synthesize _20LeftLabel, _20MiddleLabel, _20RightLabel,_25LeftLabel, _25MiddleLabel, _25RightLabel,_30LeftLabel, _30MiddleLabel, _30RightLabel,_35LeftLabel, _35MiddleLabel, _35RightLabel,_40LeftLabel, _40MiddleLabel, _40RightLabel, _45LeftLabel, _45MiddleLabel, _45RightLabel,_50LeftLabel, _50MiddleLabel, _50RightLabel,_55LeftLabel, _55MiddleLabel, _55RightLabel,_56LeftLabel, _56MiddleLabel, _56RightLabel;
 
 @synthesize _20LeftView, _20MiddleView, _20RightView,_25LeftView, _25MiddleView, _25RightView,_30LeftView, _30MiddleView, _30RightView,_35LeftView, _35MiddleView, _35RightView,_40LeftView, _40MiddleView, _40RightView,_45LeftView, _45MiddleView, _45RightView,_50LeftView, _50MiddleView, _50RightView,_55LeftView, _55MiddleView, _55RightView,_56LeftView, _56MiddleView, _56RightView;
@@ -52,6 +53,7 @@
     // Do any additional setup after loading the view from its nib.
     greenViewColor = [[UIColor alloc] initWithRed:0 green:192 blue:20 alpha:1.0];
     
+    //create variables for the percentages at each distance and direction and check to make sure they took kicks from that distance.  if they did calculate the percentages and set the label and gradient color of the each view
     double _20LeftMade;
     int _20LeftMadeInt;
     if (_20LeftMake == 0 && _20LeftMiss == 0) {

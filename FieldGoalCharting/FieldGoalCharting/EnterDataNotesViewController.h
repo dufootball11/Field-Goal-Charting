@@ -1,11 +1,9 @@
-//
-//  EnterDataNotesViewController.h
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/25/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: EnterDataNotesViewController.h
 
+//  description: header file for the enterdatanotesviewcontroller class.  lets the user enter in notes to be saved about various kicking variables at the workout
 #import <UIKit/UIKit.h>
 
 @interface EnterDataNotesViewController : UIViewController<UITextFieldDelegate, UITextViewDelegate> {
@@ -17,6 +15,7 @@
     UITextView *notesTextView;
 }
  
+//declare properties
 @property (nonatomic, retain) IBOutlet UITextField *titleStringTextField;
 @property (nonatomic, retain) IBOutlet UITextField *locationTextField;
 @property (nonatomic, retain) IBOutlet UITextField *weatherTextField;

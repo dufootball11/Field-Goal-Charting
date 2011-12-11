@@ -57,7 +57,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">chart_viewstats.png</string>
+							<string key="NSResourceName">chartview_page.png</string>
 						</object>
 					</object>
 					<object class="IBUILabel" id="583539128">
@@ -598,7 +598,6 @@
 						<string key="NSFrame">{{221, 340}, {98, 25}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:311</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -1395,8 +1394,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">chart_viewstats.png</string>
-			<string key="NS.object.0">{317, 374}</string>
+			<string key="NS.key.0">chartview_page.png</string>
+			<string key="NS.object.0">{318, 375}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">534</string>
 	</data>

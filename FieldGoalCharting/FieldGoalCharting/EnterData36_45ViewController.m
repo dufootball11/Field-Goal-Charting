@@ -1,10 +1,9 @@
-//
-//  EnterData36_45ViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/21/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: EnterData36_45ChartViewController.m
+
+//  description: implementation of the enterdata36_45viewcontroller class
 
 #import "EnterData36_45ViewController.h"
 
@@ -56,6 +55,8 @@
     Right41_45Miss = 0;
     Middle41_45Miss = 0;
 }
+
+//for the corresponding distance and direction, if the user presses the decrease button, decrement the total for that variable by one. if the user presses the increase button, increment the total for that variable by one
 
 //18-20 yards
 - (IBAction)_40LeftMakeDecrease:(id)sender {

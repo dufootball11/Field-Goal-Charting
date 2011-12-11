@@ -1,10 +1,9 @@
-//
-//  Chart.h
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/25/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: Chart.h
+
+//  description: header file for the Chart class core data entity
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
@@ -13,6 +12,7 @@
 @interface Chart : NSManagedObject {
 
 }
+//declare all the properties for the various attributes of the chart core data entity
 @property (nonatomic, retain) NSDate * date;
 
 @property (nonatomic, retain) NSNumber * left18_20Make;

@@ -1,17 +1,17 @@
-//
-//  ViewStatsViewController.h
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/27/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: ViewStatsViewController.h
 
+//  description: header file for viewstatsviewcontroller class.  the view controller that holds the various stat views, and has a segmented controller to switch the views.
+
+//import necessary header files
 #import <UIKit/UIKit.h>
-
 #import "chartViewStatsViewController.h"
 #import "fieldViewStatsViewController.h"
 #import "notesViewStatsViewController.h"
 
+//declare the segmentscontroller class
 @class SegmentsController;
 
 @interface ViewStatsViewController : UIViewController {
@@ -23,6 +23,7 @@
     IBOutlet UIBarButtonItem *doneButton;
 }
 
+//declare the various properties
 @property (nonatomic, retain) NSManagedObjectContext *managedObjectContext;
 
 @property (nonatomic, retain) UIBarButtonItem *doneButton;
@@ -98,6 +99,7 @@
 @property (nonatomic, assign) double _56RightMiss;
 @property (nonatomic, assign) double _56RightMake;
 
+//declare class methods
 - (IBAction)doneWithViews:(id)sender;
 
 @end

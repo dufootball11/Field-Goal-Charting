@@ -1,15 +1,16 @@
-//
-//  EnterDataChartViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/21/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: EnterDataChartViewController.m
 
+//  description: implementation of the enterdatachartviewcontroller class
+
+//import necessary header files
 #import "EnterDataChartViewController.h"
 #import "SegmentsController.h"
 #import "NSArray+PerformSelector.h"
 
+//segment controller interface
 @interface EnterDataChartViewController ()
 - (NSArray *)segmentViewControllers;
 - (void)firstUserExperience;
@@ -17,6 +18,7 @@
 
 @implementation EnterDataChartViewController
 
+//synthesize variables
 @synthesize DistanceSegmentedControl, CurrentDistanceChartView, segmentsController;
 @synthesize chartArray, enterDataNotesVC, navigationController;
 @synthesize enterData18_25VC, enterData26_35VC,enterData36_45VC,enterData46_55VC,enterData56PlusVC;
@@ -46,8 +48,10 @@
     CurrentDistanceChartView.clipsToBounds = YES;
     // Do any additional setup after loading the view from its nib.
     
+    //create array of view controllers to place in the segmented view controller
     NSArray * viewControllers = [self segmentViewControllers];
     
+    //create a nav controller and add the segemented view selector to the nav controller
     navigationController = [[[UINavigationController alloc] init] autorelease];
     
     self.segmentsController = [[SegmentsController alloc] initWithNavigationController:navigationController viewControllers:viewControllers];
@@ -85,14 +89,17 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+//dismiss the view controller if the user wants to cancel entering data
 - (IBAction)Cancel:(id)sender {
     [self dismissModalViewControllerAnimated:NO];
 }
 
+//if the user wants to save the data, create a new chart entity and save the information to the corresponding attributes of the entity
 - (IBAction)Save:(id)sender {
-    
+    //create new chart entity
     Chart *chart = (Chart *)[NSEntityDescription insertNewObjectForEntityForName:@"Chart" inManagedObjectContext:self.managedObjectContext];  
     
+    //set the various attributes of the chart to the corresponding variables in the view controllers
     [chart setDate: [NSDate date]];
     [chart setLeft18_20Make: [NSNumber numberWithDouble: enterData18_25VC.LeftMade18_20]];
     [chart setLeft18_20Miss: [NSNumber numberWithDouble: enterData18_25VC.Left18_20Miss]];
@@ -178,6 +185,7 @@
     
     [chartArray insertObject:chart atIndex:0];     
     
+    //set the properties for the view controller to be presented with the current data
     viewStatsVC = [[ViewStatsViewController alloc] init];
     viewStatsVC.fromViewStatsVC = NO;
     
@@ -252,10 +260,8 @@
     viewStatsVC.windString = enterDataNotesVC.windTextField.text;
     viewStatsVC.notesString = enterDataNotesVC.notesTextView.text;
     
+    //modally present the view controller
     [self presentModalViewController:viewStatsVC animated:YES];
-}
-
--(void) setData {
 }
 
 -(void) viewDidDisappear:(BOOL)animated {

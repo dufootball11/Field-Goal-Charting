@@ -1,15 +1,16 @@
-//
-//  notesViewStatsViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/27/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: notesViewStatsViewController.m
 
+//  description: implementation of the notesviewstatsviewcontroller class
+
+//import necessary header files
 #import "notesViewStatsViewController.h"
 
 @implementation notesViewStatsViewController
 
+//synthesize all variables
 @synthesize titleTextField, weatherTextField, windTextField, locationTextField, notesTextView;
 @synthesize titleTextFieldString, weatherTextFieldString, windTextFieldString, locationTextFieldString, notesTextViewString;
 
@@ -39,6 +40,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    //set the text of the text fields to the appropriate strings passed in if the user is viewing a previous workout
     titleTextField.text = titleTextFieldString;
     weatherTextField.text = weatherTextFieldString;
     windTextField.text = windTextFieldString;

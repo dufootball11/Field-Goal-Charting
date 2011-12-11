@@ -1,10 +1,9 @@
-//
-//  Chart.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/25/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: Chart.m
+
+//  description:
 
 #import "Chart.h"
 

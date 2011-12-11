@@ -1,15 +1,14 @@
-//
-//  chartViewStatsViewController.h
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/27/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: chartViewStatsViewController.h
+
+//  description: header file for the chartviewstatsviewcontroller class. shows a chart view of the user's kicking workout with standard fractional representation on a chart.
 
 #import <UIKit/UIKit.h>
 
 @interface chartViewStatsViewController : UIViewController {
-    
+    //declare all outlets
     IBOutlet UILabel *_20LeftLabel;
     IBOutlet UILabel *_20MiddleLabel;
     IBOutlet UILabel *_20RightLabel;
@@ -39,6 +38,7 @@
     IBOutlet UILabel *_56RightLabel;
 }
 
+//declare all properties for labels
 @property (nonatomic, retain) UILabel *_20LeftLabel;
 @property (nonatomic, retain) UILabel *_20MiddleLabel;
 @property (nonatomic, retain) UILabel *_20RightLabel;
@@ -68,7 +68,7 @@
 @property (nonatomic, retain) UILabel *_56RightLabel;
 
 
-
+//declare all properties for kicking variables
 @property (nonatomic, assign) double _20LeftMiss;
 @property (nonatomic, assign) double _20LeftMake;
 @property (nonatomic, assign) double _20MiddleMiss;

@@ -1,14 +1,16 @@
-//
-//  EnterDataNotesViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/25/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: EnterDataNotesViewController.m
 
+//  description: implementation for the enterdatanotesviewcontroller class.  
+
+//import necessary header files
 #import "EnterDataNotesViewController.h"
 
 @implementation EnterDataNotesViewController
+
+//synthesize variables
 @synthesize titleStringTextField;
 @synthesize gameOrPracticeSegmentedControl;
 @synthesize locationTextField;
@@ -40,6 +42,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //set text field delegates
     titleStringTextField.delegate = self;
     locationTextField.delegate = self;
     weatherTextField.delegate = self;
@@ -77,12 +80,14 @@
     [super dealloc];
 }
 
+//sets the text fields to resign on enter
 - (BOOL)textFieldShouldReturn:(UITextField*)aTextField
 {
     [aTextField resignFirstResponder];
     return YES;
 }
 
+//text view is set to resign if the user hits enter
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range 
  replacementText:(NSString *)text
 {

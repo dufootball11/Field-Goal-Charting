@@ -44,13 +44,12 @@
 				<int key="NSvFlags">274</int>
 				<object class="NSMutableArray" key="NSSubviews">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<object class="IBUIImageView" id="475845356">
+					<object class="IBUIImageView" id="664215171">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">256</int>
-						<string key="NSFrameSize">{318, 385}</string>
+						<string key="NSFrameSize">{318, 374}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView" ref="446225527"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">4</int>
@@ -58,7 +57,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">chart.png</string>
+							<string key="NSResourceName">enter_pg.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="834049422">
@@ -90,9 +89,9 @@
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
 						</object>
-						<object class="NSCustomResource" key="IBUINormalImage" id="1045460388">
+						<object class="NSCustomResource" key="IBUINormalImage" id="463197845">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">down_button.png</string>
+							<string key="NSResourceName">subtract_button.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="991800631">
@@ -114,7 +113,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="457707804">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -135,7 +134,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="603878022">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -156,7 +155,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="338295804">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -177,7 +176,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="975631464">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -198,7 +197,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="653336187">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -219,7 +218,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="146352762">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -240,7 +239,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="688609289">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -261,7 +260,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="877592920">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -282,7 +281,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="1073195789">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -303,7 +302,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="225700640">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -324,7 +323,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="1045460388"/>
+						<reference key="IBUINormalImage" ref="463197845"/>
 					</object>
 					<object class="IBUIButton" id="730063751">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -345,9 +344,9 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<object class="NSCustomResource" key="IBUINormalImage" id="386590848">
+						<object class="NSCustomResource" key="IBUINormalImage" id="5700312">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">up_button.png</string>
+							<string key="NSResourceName">add_button.png</string>
 						</object>
 					</object>
 					<object class="IBUIButton" id="1065128212">
@@ -368,7 +367,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="987416146">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -389,7 +388,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="972975226">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -410,7 +409,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="968925389">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -431,7 +430,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="872850635">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -452,7 +451,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="341706494">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -473,7 +472,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="852931359">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -494,7 +493,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="556526962">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -515,7 +514,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="436774386">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -536,7 +535,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="799685952">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -557,7 +556,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUIButton" id="997208823">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -578,7 +577,7 @@
 							<bytes key="NSRGB">MC4xOTYwNzg0MzQ2IDAuMzA5ODAzOTMyOSAwLjUyMTU2ODY1NgA</bytes>
 						</object>
 						<reference key="IBUINormalTitleShadowColor" ref="73543171"/>
-						<reference key="IBUINormalImage" ref="386590848"/>
+						<reference key="IBUINormalImage" ref="5700312"/>
 					</object>
 					<object class="IBUILabel" id="212197852">
 						<reference key="NSNextResponder" ref="191373211"/>
@@ -888,7 +887,7 @@
 				<string key="NSFrame">{{0, 20}, {320, 460}}</string>
 				<reference key="NSSuperview"/>
 				<reference key="NSWindow"/>
-				<reference key="NSNextKeyView" ref="475845356"/>
+				<reference key="NSNextKeyView"/>
 				<object class="NSColor" key="IBUIBackgroundColor">
 					<int key="NSColorSpace">3</int>
 					<bytes key="NSWhite">MQA</bytes>
@@ -1328,45 +1327,45 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="1073195789"/>
-							<reference ref="225700640"/>
+							<reference ref="664215171"/>
+							<reference ref="834049422"/>
+							<reference ref="991800631"/>
+							<reference ref="457707804"/>
+							<reference ref="603878022"/>
+							<reference ref="338295804"/>
+							<reference ref="975631464"/>
+							<reference ref="653336187"/>
 							<reference ref="146352762"/>
 							<reference ref="688609289"/>
 							<reference ref="877592920"/>
-							<reference ref="975631464"/>
-							<reference ref="338295804"/>
-							<reference ref="834049422"/>
-							<reference ref="603878022"/>
-							<reference ref="457707804"/>
-							<reference ref="991800631"/>
+							<reference ref="1073195789"/>
+							<reference ref="225700640"/>
 							<reference ref="730063751"/>
-							<reference ref="968925389"/>
-							<reference ref="872850635"/>
-							<reference ref="341706494"/>
-							<reference ref="799685952"/>
-							<reference ref="997208823"/>
 							<reference ref="1065128212"/>
 							<reference ref="987416146"/>
 							<reference ref="972975226"/>
+							<reference ref="968925389"/>
+							<reference ref="872850635"/>
+							<reference ref="341706494"/>
 							<reference ref="852931359"/>
 							<reference ref="556526962"/>
 							<reference ref="436774386"/>
+							<reference ref="799685952"/>
+							<reference ref="997208823"/>
 							<reference ref="212197852"/>
-							<reference ref="1065513427"/>
 							<reference ref="1030129159"/>
+							<reference ref="1065513427"/>
 							<reference ref="536201840"/>
-							<reference ref="661345396"/>
 							<reference ref="936411021"/>
+							<reference ref="661345396"/>
 							<reference ref="625691446"/>
 							<reference ref="430890184"/>
 							<reference ref="630612718"/>
 							<reference ref="122868608"/>
 							<reference ref="314818083"/>
 							<reference ref="637667573"/>
-							<reference ref="653336187"/>
 							<reference ref="446225527"/>
 							<reference ref="495842267"/>
-							<reference ref="475845356"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -1597,8 +1596,8 @@
 						<reference key="parent" ref="191373211"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">135</int>
-						<reference key="object" ref="475845356"/>
+						<int key="objectID">144</int>
+						<reference key="object" ref="664215171"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</object>
@@ -1616,7 +1615,6 @@
 					<string>11.IBPluginDependency</string>
 					<string>12.IBPluginDependency</string>
 					<string>13.IBPluginDependency</string>
-					<string>135.IBPluginDependency</string>
 					<string>136.IBPluginDependency</string>
 					<string>137.IBPluginDependency</string>
 					<string>139.IBPluginDependency</string>
@@ -1625,6 +1623,7 @@
 					<string>141.IBPluginDependency</string>
 					<string>142.IBPluginDependency</string>
 					<string>143.IBPluginDependency</string>
+					<string>144.IBPluginDependency</string>
 					<string>15.IBPluginDependency</string>
 					<string>16.IBPluginDependency</string>
 					<string>17.IBPluginDependency</string>
@@ -1722,7 +1721,7 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">143</int>
+			<int key="maxID">144</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2037,15 +2036,15 @@
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<object class="NSArray" key="dict.sortedKeys">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>chart.png</string>
-				<string>down_button.png</string>
-				<string>up_button.png</string>
+				<string>add_button.png</string>
+				<string>enter_pg.png</string>
+				<string>subtract_button.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
 				<bool key="EncodedWithXMLCoder">YES</bool>
-				<string>{318, 385}</string>
-				<string>{29, 29}</string>
-				<string>{29, 29}</string>
+				<string>{30, 30}</string>
+				<string>{318, 374}</string>
+				<string>{30, 30}</string>
 			</object>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">534</string>

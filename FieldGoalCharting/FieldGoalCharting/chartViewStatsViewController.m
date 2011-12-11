@@ -1,15 +1,16 @@
-//
-//  chartViewStatsViewController.m
-//  FieldGoalCharting
-//
-//  Created by Fries on 11/27/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+//  author: Billy Janssen
+//  id: 000633542
+//  date: 12/12/2011
+//  filename: chartViewStatsViewController.m
 
+//  description: implementation of the chartviewstatsviewcontroller class
+
+//import necessary libraries
 #import "chartViewStatsViewController.h"
 
 @implementation chartViewStatsViewController
 
+//synthesize all variables
 @synthesize _20LeftLabel, _20MiddleLabel, _20RightLabel,_25LeftLabel, _25MiddleLabel, _25RightLabel,_30LeftLabel, _30MiddleLabel, _30RightLabel,_35LeftLabel, _35MiddleLabel, _35RightLabel,_40LeftLabel, _40MiddleLabel, _40RightLabel, _45LeftLabel, _45MiddleLabel, _45RightLabel,_50LeftLabel, _50MiddleLabel, _50RightLabel,_55LeftLabel, _55MiddleLabel, _55RightLabel,_56LeftLabel, _56MiddleLabel, _56RightLabel;
 
 @synthesize _20LeftMake, _20LeftMiss, _20MiddleMake, _20MiddleMiss, _20RightMake, _20RightMiss;
@@ -47,6 +48,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
+    
+    //for each label, set the label to the fractional representation of makes / total kicks at each distance and direction
     self._20LeftLabel.text = [NSString stringWithFormat:@"%d / %d",(int)_20LeftMake,(int)(_20LeftMake+_20LeftMiss)];
     self._20MiddleLabel.text = [NSString stringWithFormat:@"%d / %d",(int)_20MiddleMake,(int)(_20MiddleMake+_20MiddleMiss)];
     self._20RightLabel.text = [NSString stringWithFormat:@"%d / %d",(int)_20RightMake,(int)(_20RightMake+_20RightMiss)];
