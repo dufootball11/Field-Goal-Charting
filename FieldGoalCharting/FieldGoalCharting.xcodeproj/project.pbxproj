@@ -39,6 +39,7 @@
 		24A1719F14742EBA005028F4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A1719D14742EBA005028F4 /* HomeViewController.xib */; };
 		24A171A7147AC186005028F4 /* EnterDataChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24A171A5147AC186005028F4 /* EnterDataChartViewController.m */; };
 		24A171A8147AC186005028F4 /* EnterDataChartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24A171A6147AC186005028F4 /* EnterDataChartViewController.xib */; };
+		24A726E3149519E1005CDAB1 /* 50+enter.png in Resources */ = {isa = PBXBuildFile; fileRef = 24A726E2149519E1005CDAB1 /* 50+enter.png */; };
 		24CCC680147D8DA000882381 /* chart2.png in Resources */ = {isa = PBXBuildFile; fileRef = 24CCC67F147D8DA000882381 /* chart2.png */; };
 		24CCC683147D973C00882381 /* up_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 24CCC682147D973C00882381 /* up_button.png */; };
 		24CCC685147D974900882381 /* down_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 24CCC684147D974900882381 /* down_button.png */; };
@@ -107,6 +108,7 @@
 		24A171A4147AC186005028F4 /* EnterDataChartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnterDataChartViewController.h; sourceTree = "<group>"; };
 		24A171A5147AC186005028F4 /* EnterDataChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnterDataChartViewController.m; sourceTree = "<group>"; };
 		24A171A6147AC186005028F4 /* EnterDataChartViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EnterDataChartViewController.xib; sourceTree = "<group>"; };
+		24A726E2149519E1005CDAB1 /* 50+enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "50+enter.png"; sourceTree = "<group>"; };
 		24CCC67F147D8DA000882381 /* chart2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chart2.png; sourceTree = "<group>"; };
 		24CCC682147D973C00882381 /* up_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_button.png; sourceTree = "<group>"; };
 		24CCC684147D974900882381 /* down_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_button.png; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 		24A1718114742C4A005028F4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24A726E2149519E1005CDAB1 /* 50+enter.png */,
 				24966D5D1494227B007E2EF0 /* chartview_page.png */,
 				24966D5E1494227B007E2EF0 /* enter_pg.png */,
 				24966D59148FE154007E2EF0 /* add_button.png */,
@@ -353,6 +356,7 @@
 				24966D5C148FE154007E2EF0 /* subtract_button.png in Resources */,
 				24966D5F1494227B007E2EF0 /* chartview_page.png in Resources */,
 				24966D601494227B007E2EF0 /* enter_pg.png in Resources */,
+				24A726E3149519E1005CDAB1 /* 50+enter.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
