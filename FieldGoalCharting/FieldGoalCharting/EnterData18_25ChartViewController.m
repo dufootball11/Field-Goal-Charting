@@ -223,6 +223,17 @@
 
 - (void)dealloc {
     [String18_20Left release];
+    [String18_20Right release];
+    [String18_20Middle release];
+    [String18_20LeftMiss release];
+    [String18_20RightMiss release];
+    [String18_20MiddleMiss release];
+    [String21_25Left release];
+    [String21_25Right release];
+    [String21_25Middle release];
+    [String21_25LeftMiss release];
+    [String21_25RightMiss release];
+    [String21_25MiddleMiss release];
     [super dealloc];
 }
 @end

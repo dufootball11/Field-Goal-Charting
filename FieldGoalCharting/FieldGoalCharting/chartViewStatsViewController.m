@@ -88,6 +88,37 @@
 
 }
 
+-(void) dealloc {
+    [_20LeftLabel release]; 
+    [_20MiddleLabel release]; 
+    [_20RightLabel release];
+    [_25LeftLabel release]; 
+    [_25MiddleLabel release]; 
+    [_25RightLabel release];
+    [_30LeftLabel release]; 
+    [_30MiddleLabel release]; 
+    [_30RightLabel release];
+    [_35LeftLabel release];
+    [_35MiddleLabel release]; 
+    [_35RightLabel release];
+    [_40LeftLabel release];
+    [_40MiddleLabel release]; 
+    [_40RightLabel release]; 
+    [_45LeftLabel release]; 
+    [_45MiddleLabel release]; 
+    [_45RightLabel release];
+    [_50LeftLabel release]; 
+    [_50MiddleLabel release]; 
+    [_50RightLabel release];
+    [_55LeftLabel release]; 
+    [_55MiddleLabel release]; 
+    [_55RightLabel release];
+    [_56LeftLabel release]; 
+    [_56MiddleLabel release]; 
+    [_56RightLabel release];
+    [super dealloc];
+}
+
 - (void)viewDidUnload
 {
     [super viewDidUnload];

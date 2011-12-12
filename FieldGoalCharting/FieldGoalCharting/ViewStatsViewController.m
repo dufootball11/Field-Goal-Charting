@@ -268,6 +268,21 @@
 - (void)dealloc {
     [currentStatView release];
     [doneButton release];
+    [segmentsController release];
+    [viewSegmentedControl release];
+    [navigationController release];
+    [currentStatView release];
+    [chartViewStatsVC release];
+    [fieldViewStatsVC release];
+    [notesViewStatsVC release];
+    [greenViewColor release];
+    [managedObjectContext release];
+    [titleString release];
+    [locationString release];
+    [weatherString release];
+    [windString release];
+    [notesString release];
+    [doneButton release];
     [super dealloc];
 }
 

@@ -218,4 +218,20 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(void) dealloc {
+    [String36_40Left release];
+    [String36_40Right release];
+    [String36_40Middle release];
+    [String36_40LeftMiss release];
+    [String36_40RightMiss release];
+    [String36_40MiddleMiss release];
+    [String41_45Left release];
+    [String41_45Right release];
+    [String41_45Middle release];
+    [String41_45LeftMiss release];
+    [String41_45RightMiss release];
+    [String41_45MiddleMiss release];
+    [super dealloc];
+}
+
 @end

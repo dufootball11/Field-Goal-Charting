@@ -294,6 +294,12 @@
     [SaveButton release];
     [DistanceSegmentedContol release];
     [CurrentDistanceChartView release];
+    [DistanceSegmentedControl release]; 
+    [CurrentDistanceChartView release]; 
+    [segmentsController release];
+    [chartArray release]; 
+    [enterDataNotesVC release];
+    [navigationController release];
     [super dealloc];
 }
 

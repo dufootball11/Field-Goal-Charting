@@ -76,6 +76,11 @@
     [weatherTextField release];
     [windTextField release];
     [notesTextView release];
+    [titleTextFieldString release];
+    [locationTextField release];
+    [weatherTextFieldString release];
+    [windTextFieldString release];
+    [notesTextViewString release];
     [super dealloc];
 }
 @end

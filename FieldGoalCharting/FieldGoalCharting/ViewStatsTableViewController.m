@@ -266,4 +266,10 @@
 
 }
 
+-(void) dealloc {
+    [managedObjectContext release];
+    [chartArray release];
+    [super dealloc];
+}
+
 @end

@@ -60,6 +60,7 @@
 - (void)dealloc {
     [EnterStatsButton release];
     [ViewStatsButton release];
+    [managedObjectContext release];
     [super dealloc];
 }
 
